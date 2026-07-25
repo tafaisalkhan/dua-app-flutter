@@ -1,0 +1,1050 @@
+{
+  "Dua": {
+    "name": "Dua-ul-Ambiya",
+    "bismial": "بسم الله الرحمن الرحيم",
+    "size": "normal",
+    "language": "english",
+    "hasFavorite": false,
+    "anbiya": [
+      {
+        "name": "Adam (AS)",
+        "arabic_name": "حضرت آدم عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Araf",
+            "chapter_no": 7,
+            "aya": [
+              {
+                "index": 1,
+                "aya_no": "23",
+                "arabic": ". قَالَا رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+                "english": "They  said, Our  Lord,  we  have  wronged  ourselves,  and  if  You  do  not  forgive  us  and have  mercy  upon  us,  we  will  surely  be  among  the  losers.",
+                "spanish": "Dijeron: «¡Señor! Hemos sido injustos con nosostros mismos. Si no nos perdonas y Te apiadas de nosotros, seremos, ciertamente, de los que pierden». ",
+                "chinses": "他倆說：「我們的主啊！我們已自欺了，如果你不赦宥我們，不慈憫我們，我們必定變成虧折者。」 ",
+                "japanses": "かれら両人は言った。「主よ，わたしたちは誤ちを犯しました。もしあなたの御赦しと慈悲を御受け出来ないならば，わたしたちは必ず失敗者の仲間になってしまいます。」",
+                "urdu": "دونوں نے کہا اے ہمارے رب! ہم نے اپنا بڑا نقصان کیا اور اگر تو ہماری مغفرت نہ کرے گا اور ہم پر رحم نہ کرے گا تو واقعی ہم نقصان پانے والوں میں سے ہوجائیں گے",
+                "turkish": "Dediler ki: 'Ey Rabbimiz! Biz kendimize zulmettik, eger bizi bagislamaz ve bize rahmetinle muamele etmezsen muhakkak ziyana ugrayacaklardan oluruz!",
+                "json_aya": 977,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "adam_1.mp3",
+                "chapter_name": "Al-Araf",
+                "name": "Adam (AS)",
+                "arabic_name": "حضرت آدم عليہ سلام",
+                "chapter_no": 7,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Noh (AS)",
+        "arabic_name": "حضرت نوح عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Hud",
+            "chapter_no": 11,
+            "aya": [
+              {
+                "index": 2,
+                "aya_no": "41",
+                "arabic": ". وَقَالَ ارْكَبُوا فِيهَا بِسْمِ اللَّهِ مَجْرَاهَا وَمُرْسَاهَا ۚ إِنَّ رَبِّي لَغَفُورٌ رَّحِيمٌ",
+                "english": "TAnd  [Noah]  said,  'Embark  therein;  in  the  name  of Allah is  its  course  and  its anchorage.  Indeed,  my  Lord  is  Forgiving  and  Merciful.",
+                "spanish": "DDijo: «¡Subid a ella! ¡Que navegue y llegue a buen puerto en el nombre de Alá! Mi Señor es, ciertamente, indulgente, misericordioso». ",
+                "chinses": "他說：「你們上船去吧！這隻船的航行和停舶都是奉真主之名的。我的主確是至赦的，確是至慈的。」  ",
+                "japanses": "かれ（ヌーフ）は言った。「アッラーの御名によって，これに乗れ。航行にも停泊にもそれによれ。本当にわたしの主は，寛容にして慈悲深くあられる。」",
+                "urdu": "نوح ﴿علیہ السلام﴾ نے کہا، اس کشتی میں بیٹھ جاؤ اللہ ہی کے نام سے اس کا چلنا اور ٹھہرنا ہے، یقیناً میرا رب بڑی بخشش اور بڑے رحم واﻻ ہے",
+                "turkish": "Nuh dedi ki; Allah'in adiyla binin içine. Onun akisi da, durusu da (O'nun adiyladir). Hiç süphesiz Rabbim gerçekten çok bagislayici, çok esirgeyicidir.",
+                "json_aya": 1514,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_1.mp3",
+                "chapter_name": "Hud",
+                "chapter_no": 11,
+                "name": "Noh (AS)",
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Hud",
+            "chapter_no": 11,
+            "aya": [
+              {
+                "index": 3,
+                "aya_no": "47",
+                "arabic": ". قَالَ رَبِّ إِنِّي أَعُوذُ بِكَ أَنْ أَسْأَلَكَ مَا لَيْسَ لِي بِهِ عِلْمٌ ۖ وَإِلَّا تَغْفِرْ لِي وَتَرْحَمْنِي أَكُن مِّنَ الْخَاسِرِينٌَ",
+                "english": "[Noah]  said,  'My  Lord,  I  seek  refuge  in  You  from  asking  that  of  which  I  have  no knowledge.  And  unless  You  forgive  me  and  have  mercy  upon  me,  I  will  be  among  the losers.",
+                "spanish": "Dijo: «¡Señor, líbrame de pedirte algo de lo que no tengo conocimiento! Si Tú no me perdonas y Te apiadas de mí, seré de los que están perdidos...»  ",
+                "chinses": "他說：「我的主啊！我求庇於你，以免我向你祈求我所不知道的事情，如果你不饒恕我，不憐憫我，我就變成為虧折的人了。」  ",
+                "japanses": "かれは申し上げた。「主よ，本当にわたしか知りもしないことに就いて，あなたに請い求めないよう，御赦しを願います。あなたがわたしを御赦しになり，慈悲を与えられなければ，わたしはきっと，失敗者の仲間になるでしょう。」",
+                "urdu": "نوح نے کہا میرے پالنہار میں تیری ہی پناه چاہتا ہوں اس بات سے کہ تجھ سے وه مانگوں جس کا مجھے علم ہی نہ ہو اگر تو مجھے نہ بخشے گا اور تو مجھ پر رحم نہ فرمائے گا، تو میں خساره پانے والوں میں ہو جاؤں گا",
+                "turkish": "Nuh: 'Ey Rabbim! Ben bilmedigim bir seyi istemis olmaktan dolayi sana siginirim. Sen beni bagislamazsan, bana merhamet etmezsen ben hüsrana ugrayanlardan olurum.",
+                "json_aya": 1520,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_2.mp3",
+                "chapter_name": "Hud",
+                "chapter_no": 11,
+                "name": "Noh (AS)",
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Mumenoon",
+            "chapter_no": 23,
+            "aya": [
+              {
+                "index": 4,
+                "aya_no": "29",
+                "arabic": ". وَقُل رَّبِّ أَنزِلْنِي مُنزَلًا مُّبَارَكًا وَأَنتَ خَيْرُ الْمُنزِلِينٌََ",
+                "english": "And  say,  'My  Lord,  let  me  land  at  a  blessed  landing  place,  and  You  are  the  best  to accommodate  [us].' ",
+                "spanish": "Y di: '¡Señor! ¡Haz que desembarque en un lugar bendito! Tú eres Quien mejor puede hacerlo'  ",
+                "chinses": "你應當說：「我的主啊！請你使我們在一個吉祥的地方登陸，你是最會安置眾生的。」   ",
+                "japanses": "言え，「主よ，祝福された上陸地点に，わたしを上陸させて下さい。本当にあなたは最も優れた上陸を叶えられる方であります」",
+                "urdu": "اور کہنا کہ اے میرے رب! مجھے بابرکت اتارنا اتار اور تو ہی بہتر ہے اتارنے والوں میں",
+                "turkish": "Ve de ki: 'Rabbim! Beni mübarek bir yere indir. Sen, konuklatanlarin en hayirlisisin.",
+                "json_aya": 2702,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_3.mp3",
+                "name": "Noh (AS)",
+                "chapter_name": "Al-Mumenoon",
+                "chapter_no": 23,
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Mumenoon",
+            "chapter_no": 23,
+            "aya": [
+              {
+                "index": 5,
+                "aya_no": "28",
+                "arabic": ".فَإِذَا اسْتَوَيْتَ أَنتَ وَمَن مَّعَكَ عَلَى الْفُلْكِ فَقُلِ الْحَمْدُ لِلَّهِ الَّذِي نَجَّانَا مِنَ الْقَوْمِ الظَّالِمِينَ",
+                "english": "And  when  you  have  boarded  the  ship,  you  and  those  with  you,  then  say,  'Praise  to Allah who  has  saved  us  form  the  wrongdoing  people.' ",
+                "spanish": "Cuando tú y los tuyos estéis instalados en la nave, di: '¡Alabado sea Alá, Que nos ha salvado del pueblo impío!'   ",
+                "chinses": "當你和同船者在船上坐定的時候，你應當說：「一切讚頌，全歸真主——他曾拯救我們脫離了不義的民眾。」  ",
+                "japanses": "そして一緒の者と舟の中に落ち着いたら（祈って）言え，「悪を行う人びとから，わたしたちをお救い下さったアッラーに讃えあれ」",
+                "urdu": "جب تو اور تیرے ساتھی کشتی پر باطمینان بیٹھ جاؤ تو کہنا کہ سب تعریف اللہ کے لئے ہی ہے جس نے ہمیں ﻇالم لوگوں سے نجات عطا فرمائی",
+                "turkish": "Sen, yanindakilerle beraber gemiye yerlestiginde: 'Bizi zalimler toplulugundan kurtaran Allah'a hamdolsun de.",
+                "json_aya": 2701,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_4.mp3",
+                "chapter_name": "Al-Mumenoon",
+                "chapter_no": 23,
+                "name": "Noh (AS)",
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Nuh",
+            "chapter_no": 71,
+            "aya": [
+              {
+                "index": 6,
+                "aya_no": "26, 27",
+                "arabic": "   وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى الْأَرْضِ مِنَ الْكَافِرِينَ دَيَّارًا  إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا عِبَادَكَ وَلَا يَلِدُوا إِلَّا فَاجِرًا كَفَّارًا",
+                "english": "And  Noah  said,  'My  Lord,  do  not  leave  upon  the  earth  from  among  the  disbelievers  an inhabitant.",
+                "spanish": "Noé dijo: «¡Señor! ¡No dejes en la tierra a ningún infiel con vida! .  Indeed,  if  You  leave  them,  they  will  mislead  Your  servants  and  not  beget  except  [every] wicked  one  and  [confirmed]  disbeliever. ",
+                "chinses": "努哈說：「我的主啊！求你不要留一個不信道大者在大地上， 如果你留他們，他們將使你的眾僕迷誤，他們只生育不道德的、不感恩的子女。  ",
+                "japanses": "ヌーフは（祈って）言った。「主よ，不信心な居住者を誰一人として地上に残さないで下さい。もしあなたがかれらを残されれば，かれらは必ずあなたに仕える者を迷わせ，また罪を犯す不信心な者の外，生まないでしょう。",
+                "urdu": "  اور (حضرت) نوح (علیہ السلام) نے کہا کہ اے میرے پالنے والے! تو روئے زمین پر کسی کافر کو رہنے سہنے واﻻ نہ چھوڑ اور (حضرت) نوح (علیہ السلام) نے کہا کہ اے میرے پالنے والے! تو روئے زمین پر کسی کافر کو رہنے سہنے واﻻ نہ چھوڑ",
+                "turkish": "Nûh dedi ki: Yeryüzünde kafirlerden bir tek kisi birakma. Zira sen onlari birakirsan kullarini yoldan çikarirlar ve sadece ahlâksiz ve kâfir çocuklar dogururlar.",
+                "json_aya": 5445,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_5.mp3",
+                "name": "Noh (AS)",
+                "chapter_name": "Nuh",
+                "chapter_no": 71,
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Nuh",
+            "chapter_no": 71,
+            "aya": [
+              {
+                "index": 7,
+                "aya_no": "28",
+                "arabic": " رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَن دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا",
+                "english": "My  Lord,  forgive  me  and  my  parents  and  whoever  enters  my  house  a  believer  and  the believing  men  and  believing  women.  And  do  not  increase  the  wrongdoers  except  in destruction.",
+                "spanish": "¡Señor! ¡Perdónanos, a mi y a mis padres, a quien entre en mi casa como creyente, a los creyentes y a las creyentes! Y a los impíos ¡no hagas sino perderles más!» ",
+                "chinses": "我的主啊！求你赦宥我和我的父母，赦宥信道而入我的房屋的人，以及信士們和信女們。求你使不義的人們更加毀滅。」  ",
+                "japanses": "主よ，わたしとわたしの両親を御赦し下さい。また信者としてわたしの家に入る者，また（凡ての）信仰する男と信仰する女たちを御赦し下さい。そして不義を行う者たちには，滅亡の外には（何も）加えないで下さい。」",
+                "urdu": "  اے میرے پروردگار! تو مجھے اور میرے ماں باپ اور جو بھی ایمان کی حالت میں میرے گھر میں آئے اور تمام مومن مردوں اور عورتوں کو بخش دے اور کافروں کو سوائے بربادی کے اور کسی بات میں نہ بڑھا",
+                "turkish": "Ey Rabbim! Bana, babama, anama, mümin olarak evime girene ve bütün inanmis erkek ve kadinlara magfiret buyur. Zalimlerin de sadece helakini artir.dece ahlâksiz ve kâfir çocuklar dogururlar.",
+                "json_aya": 1514,
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "nooh_6.mp3",
+                "name": "Noh (AS)",
+                "chapter_name": "Nuh",
+                "chapter_no": 71,
+                "arabic_name": "حضرت نوح عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ibrahim (AS)",
+        "arabic_name": "حضرت ابرہيم عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Baqara",
+            "chapter_no": 2,
+            "aya": [
+              {
+                "index": 8,
+                "aya_no": "126",
+                "arabic": " وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ اجْعَلْ هَٰذَا بَلَدًا آمِنًا وَارْزُقْ أَهْلَهُ مِنَ الثَّمَرَاتِ مَنْ آمَنَ مِنْهُم بِاللَّهِ وَالْيَوْمِ الْآخِرِ ۖ قَالَ وَمَن كَفَرَ فَأُمَتِّعُهُ قَلِيلًا ثُمَّ أَضْطَرُّهُ إِلَىٰ عَذَابِ النَّارِ ۖ وَبِئْسَ الْمَصِيرُ",
+                "english": "And [mention] when Abraham said, 'My Lord, make this a secure city and provide its people with fruits - whoever of them believes in Allah and the Last Day.' [ Allah ] said. 'And whoever disbelieves - I will grant him enjoyment for a little; then I will force him to the punishment of the Fire, and wretched is the destination.",
+                "spanish": "Y cuando Abraham dijo: «¡Señor! Haz de ésta una ciudad segura y provee de frutos a su población, a aquéllos que crean en Alá y en el último Día». Dijo: «A quienes no crean, es dejaré que gocen por breve tiempo. Luego. les arrastraré al castigo del Fuego. ¡Qué mal fin...!» ",
+                "chinses": "當時，易卜拉欣說：「我的主啊！求你使這裡變成安寧的地方，求你以各種糧食供給這裡的居民──他們中信真主和末日的人。」他說：「不信道者，我將使他暫時享受，然後強逼他去受火刑。那結果真惡劣！」   ",
+                "japanses": "イブラーヒームが（祈って）言った。「主よ。ここを平安の町にして下さい。その住民に，果実を御授け下さい。アッラーと最後の日を信じる者のために。」するとかれは仰せられた。「信仰を拒否する者にも，しばしの間楽しみを与えよう。その後かれらを火獄の懲罰に，駆り立てるであろう。何と悪い帰り所であることよ。」",
+                "urdu": " جب ابراہیم نے کہا، اے پروردگار! تو اس جگہ کو امن واﻻ شہر بنا اور یہاں کے باشندوں کو جو اللہ تعالیٰ پر اور قیامت کے دن پر ایمان رکھنے والے ہوں، پھلوں کی روزیاں دے اللہ تعالیٰ نے فرمایا: میں کافروں کو بھی تھوڑا فائده دوں گا، پھر انہیں آگ کے عذاب کی طرف بےبس کردوں گا، یہ پہنچنے کی جگہ بری ہے",
+                "turkish": "Ve o vakit Ibrahim 'Ey Rabbim, burasini güvenli bir belde kil, halkindan Allah'a ve ahiret gününe iman edenleri çesitli meyvalarla riziklandir' diye yalvardi. Allah buyurdu ki: 'küfredeni dahi riziklandirir da hayattan biraz nasip aldiririm, sonra da onu ates azabina ugratirim ki, orasi ne yaman bir duraktir!.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_1.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Al-Baqara",
+                "chapter_no": 2,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Baqara",
+            "chapter_no": 2,
+            "aya": [
+              {
+                "index": 9,
+                "aya_no": "127",
+                "arabic": " وَإِذْ يَرْفَعُ إِبْرَاهِيمُ الْقَوَاعِدَ مِنَ الْبَيْتِ وَإِسْمَاعِيلُ رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
+                "english": "And [mention] when Abraham was raising the foundations of the House and [with him] Ishmael, [saying], 'Our Lord, accept [this] from us. Indeed You are the Hearing, the Knowing.",
+                "spanish": "Y cuando Abraham e Ismael levantaban los cimientos de la Casa: «¡Señor, acéptanoslo! ¡Tú eres Quien todo lo oye, Quien todo lo sabe!  ",
+                "chinses": "當時，易卜拉欣和易司馬儀樹起天房的基礎，他們倆祈禱說：「我們的主啊！求你接受我們的敬意，你確是全聰的，確是全知的。    ",
+                "japanses": "それからイブラーヒームとイスマーイールが，その家の礎を定めた時のこと。（その時二人は言った。）「主よ，わたしたちから（この奉仕を）受け入れて下さい。本当にあなたは全聴にして全知であられる。",
+                "urdu": " ابراہیم ﴿علیہ السلام﴾ اور اسماعیل ﴿علیہ السلام﴾ کعبہ کی بنیادیں اور دیواریں اٹھاتے جاتے تھے اور کہتے جارہے تھے کہ ہمارے پروردگار! تو ہم سے قبول فرما، تو ہی سننے واﻻ اور جاننے واﻻ ہے",
+                "turkish": "Ve ne vakit ki Ibrahim, Beyt'in temellerini yükseltmeye basladi, Ismail ile birlikte söyle dua ettiler: Ey Rabbimiz, bizden kabul buyur, hiç süphesiz isiten sensin, bilen sensin.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_2.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Al-Baqara",
+                "chapter_no": 2,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Baqara",
+            "chapter_no": 2,
+            "aya": [
+              {
+                "index": 10,
+                "aya_no": "128",
+                "arabic": " رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَا أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنتَ التَّوَّابُ الرَّحِيمُ",
+                "english": "Our Lord, and make us Muslims [in submission] to You and from our descendants a Muslim nation [in submission] to You. And show us our rites and accept our repentance. Indeed, You are the Accepting of repentance, the Merciful.",
+                "spanish": "¡Y haz, Señor, que nos sometamos a Ti, haz de nuestra descendencia una comunidad sumisa a Ti, muéstranos nuestros ritos y vuélvete a nosotros! ¡Tú eres, ciertamente, el Indulgente, el Misericordioso!  ",
+                "chinses": "我們的主啊！求你使我們變成你的兩個順民，並從我們的後裔中造成歸順你的民族，求你昭示我們朝覲的儀式，求你恕宥我們，你確是至宥的，確是至慈的。   ",
+                "japanses": "主よ，わたしたち両人を，あなたに服従，帰依する者〔ムスリム〕にして下さい。またわたしたちの子孫をも，あなたに服従，帰依する民〔ウンマ〕にして下さい。わたしたちに祭儀を示し，哀れみを与えて下さい。あなたは度々許される方，慈悲深い方であられる。",
+                "urdu": " اے ہمارے رب! ہمیں اپنا فرمانبردار بنا لے اور ہماری اوﻻد میں سے بھی ایک جماعت کو اپنی اطاعت گزار رکھ اور ہمیں اپنی عبادتیں سکھا اور ہماری توبہ قبول فرما، تو توبہ قبول فرمانے واﻻ اور رحم وکرم کرنے واﻻ ہے",
+                "turkish": "Ey bizim Rabbimiz, hem bizim ikimizi yalniz senin için boyun egen müslümanlar kil, hem de soyumuzdan yalniz senin için boyun egen müslüman bir ümmet meydana getir ve bize ibadetimizin yollarini göster, tevbemize rahmetle bakiver. Hiç süphesiz Tevvâb sensin, Rahîm sensin.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_3.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Al-Baqara",
+                "chapter_no": 2,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Baqara",
+            "chapter_no": 2,
+            "aya": [
+              {
+                "index": 11,
+                "aya_no": "129",
+                "arabic": " رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا مِّنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِكَ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُزَكِّيهِمْ ۚ إِنَّكَ أَنتَ الْعَزِيزُ الْحَكِيمُ",
+                "english": "Our Lord, and send among them a messenger from themselves who will recite to them Your verses and teach them the Book and wisdom and purify them. Indeed, You are the Exalted in Might, the Wise.",
+                "spanish": "¡Señor! Suscita entre ellos a un Enviado de su estirpe que les recite Tus aleyas y les enseñe la Escritura y la Sabiduría les purifique! Tú eres, ciertamente, el Poderoso, el Sabio».  ",
+                "chinses": "我們的主啊！求你在他們中間派遣一個同族的使者，對他們宣讀你的啟示，教授他們天經和智慧，並且薰陶他們。你確是萬能的，確是至睿的。」    ",
+                "japanses": "主よ，かれらの間にあなたの印を読誦させ啓典と英知を教え，かれらを清める使徒をかれらの中から遣わして下さい。本当にあなたは偉大にして英明な方であられる。」",
+                "urdu": " اے ہمارے رب! ان میں انہی میں سے رسول بھیج جو ان کے پاس تیری آیتیں پڑھے، انہیں کتاب وحکمت سکھائے اور انہیں پاک کرے، یقیناً تو غلبہ واﻻ اور حکمت واﻻ ہے",
+                "turkish": "Ey bizim Rabbimiz, bir de onlara içlerinden öyle bir peygamber gönder ki, onlara senin âyetlerini tilavet eylesin, kendilerine kitabi ve hikmeti ögretsin, içlerini ve dislarini tertemiz yapip onlari pâk eylesin. Hiç süphesiz Azîz sensin, hikmet sahibi Sensin.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_4.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Al-Baqara",
+                "chapter_no": 2,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Anaam",
+            "chapter_no": 6,
+            "aya": [
+              {
+                "index": 12,
+                "aya_no": "77",
+                "arabic": " فَلَمَّا رَأَى الْقَمَرَ بَازِغًا قَالَ هَٰذَا رَبِّي ۖ فَلَمَّا أَفَلَ قَالَ لَئِن لَّمْ يَهْدِنِي رَبِّي لَأَكُونَنَّ مِنَ الْقَوْمِ الضَّالِّينَُ",
+                "english": "And  when  he  saw  the  moon  rising,  he  said,  'This  is  my  lord.'  But  when  it  set,  he  said, 'Unless  my  Lord  guides  me,  I  will  surely  be  among  the  people  gone  astray.",
+                "spanish": "Cuando vio la luna que salía, dijo: «Éste es mi Señor». Pero, cuando se puso, dijo: «Si no me dirige mi Señor, voy a ser, ciertamente, de los extraviados».  ",
+                "chinses": "當他看見月亮升起的時候，他說：「這是我的主。」當月亮沒落的時候，他說：「如果我的主沒有引導我，那末，我必定會成為迷誤者。」     ",
+                "japanses": "次いでかれは月が昇るのを見て，言った。「これがわたしの主です。」だがそれが沈むと，かれは言った。「わたしの主がわたしを導かれなかったら，わたしはきっと迷った民の仲間になったでしょう。」",
+                "urdu": " پھر جب چاند کو دیکھا چمکتا ہوا تو فرمایا کہ یہ میرا رب ہے لیکن جب وه غروب ہوگیا تو آپ نے فرمایا کہ اگر مجھ کو میرے رب نے ہدایت نہ کی تو میں گمراه لوگوں میں شامل ہوجاؤں گا",
+                "turkish": "Ay'i dogarken gördü: Rabb'im budur dedi. O da batinca: Yemin ederim ki, Rabbim bana dogru yolu göstermeseydi, elbette sapikliga düsen topluluktan olurdum' dedi.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_5.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Al-Anaam",
+                "chapter_no": 6,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 13,
+                "aya_no": "35, 36",
+                "arabic": "     وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا وَاجْنُبْنِي وَبَنِيَّ أَن نَّعْبُدَ الْأَصْنَام رَبِّ إِنَّهُنَّ أَضْلَلْنَ كَثِيرًا مِّنَ النَّاسِ ۖ فَمَن تَبِعَنِي فَإِنَّهُ مِنِّي ۖ وَمَنْ عَصَانِي فَإِنَّكَ غَفُورٌ رَّحِيمٌَُ  ",
+                "english": "And  [mention,  O  Muhammad],  when  Abraham  said,  My  Lord,  make  this  city  [Makkah] secure  and  keep  me  and  my  sons  away  from  worshipping  idols. My  Lord,  indeed  they  have  led  astray  many  among  the  people.  So  whoever  follows  me  - then  he  is  of  me;  and  whoever  disobeys  me  -   indeed,  You  are  [yet]  Forgiving  and Merciful.",
+                "spanish": "Y cuando Abraham dijo: «¡Señor! ¡Que esté segura esta ciudad! ¡Y evita que yo y mis hijos sirvamos a los ídolos!  ¡Señor! ¡Han extraviado a muchos hombres! Quien me siga será de los míos. Pero quien me desobedezca... Tú eres indulgente, misericordioso. ",
+                "chinses": "當時易卜拉欣說：「我的主啊！求你使這個地方變成安全的，求你使我和我的子孫，遠離偶像崇拜。  我的主啊！偶像們確已使許多人迷誤。誰順從我，他確是我的同道；誰違抗我，那末，你是至赦的，是至慈的。     ",
+                "japanses": "イブラーヒームが（こう祈って）言った時を思え。「主よ，この町を安泰にして下さい。またわたしと子孫を偶像崇拝から遠ざけて下さい。 主よ，かれらは人びとの多くを迷わせました。わたし（の道）に従う者は，本当にわたしの身内であります。わたしに従わない者は……だがあなたは度々御許しなされる方，慈悲深い方であられます。",
+                "urdu": " (ابراہیم کی یہ دعا بھی یاد کرو) جب انہوں نے کہا کہ اے میرے پروردگار! اس شہر کو امن واﻻ بنادے، اور مجھے اور میری اوﻻد کو بت پرستی سے پناه دے۔ اے میرے پالنے والے معبود! انہوں نے بہت سے لوگوں کو راه سے بھٹکا دیا ہے۔ پس میری تابعداری کرنے واﻻ میرا ہے اور جو میری نافرمانی کرے تو تو بہت ہی معاف اور کرم کرنے واﻻ ہے۔",
+                "turkish": "Hatirla ki; Bir zaman Ibrahim söyle demisti: Rabbim! Bu sehri güvenli kil! Beni ve ogullarimi putlara tapmaktan uzak tut!. Rabbim! Çünkü onlar (putlar) insanlardan birçogunun sapmasina sebep oldular. Simdi kim bana uyarsa, o bendendir; kim bana karsi gelirse, artik sen gerçekten çok bagislayan ve çok merhamet edensin.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_6.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 14,
+                "aya_no": "37",
+                "arabic": " رَّبَّنَا إِنِّي أَسْكَنتُ مِن ذُرِّيَّتِي بِوَادٍ غَيْرِ ذِي زَرْعٍ عِندَ بَيْتِكَ الْمُحَرَّمِ رَبَّنَا لِيُقِيمُوا الصَّلَاةَ فَاجْعَلْ أَفْئِدَةً مِّنَ النَّاسِ تَهْوِي إِلَيْهِمْ وَارْزُقْهُم مِّنَ الثَّمَرَاتِ لَعَلَّهُمْ يَشْكُرُونََُ",
+                "english": "Our  Lord,  I  have  settled  some  of  my  descendants  in  an  uncultivated  valley  near  Your sacred  House,  our  Lord,  that  they  may  establish  prayer.  So  make  hearts  among  the people  incline  toward  them  and  provide  for  them  from  the  fruits  that  they  might  be grateful.",
+                "spanish": "¡Señor! He establecido a parte de mi descendencia en un valle sin cultivar, junto a tu Casa Sagrada, ¡Señor!, para que hagan la azalá. ¡Haz que los corazones de algunos hombres sean afectuosos con ellos! ¡Provéeles de frutos! Quizás, así, sean agradecidos.   ",
+                "chinses": "我們的主啊！我確已使我的部分後裔住在一個沒有莊稼的山谷裡，住在你的禁房附近——我們的主啊！——以便他們謹守拜功，求你使一部分人的心依戀他們，求你以一部分果實供給他們，以便他們感謝。  ",
+                "japanses": "主よ，わたしは子孫のある者をあなたの聖なる館の側の耕せない谷間に住まわせました。主よ，かれらに礼拝の務めを守らせて下さい。そうすれば人びとの心をかれらに引き付けるでしょう。またかれらに果実を御授け下さい。きっとかれらは感謝するでしょう。",
+                "urdu": " اے ہمارے پروردگار! میں نے اپنی کچھ اوﻻد اس بے کھیتی کی وادی میں تیرے حرمت والے گھر کے پاس بسائی ہے۔ اے ہمارے پروردگار! یہ اس لیے کہ وه نماز قائم رکھیں، پس تو کچھ لوگوں کے دلوں کو ان کی طرف مائل کردے۔ اور انہیں پھلوں کی روزیاں عنایت فرما تاکہ یہ شکر گزاری کریں",
+                "turkish": "Rabbimiz! Ben çocuklarimdan bir kismini namazi dosdogru kilmalari için, senin Beyt-i Haram'inin yaninda, ekinsiz bir vadiye yerlestirdim. Artik sen de insanlardan bir kismini onlara meylettir. Ve onlari bazi meyvelerle riziklandir ki sükretsinler.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_7.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 15,
+                "aya_no": "38",
+                "arabic": " رَبَّنَا إِنَّكَ تَعْلَمُ مَا نُخْفِي وَمَا نُعْلِنُ ۗ وَمَا يَخْفَىٰ عَلَى اللَّهِ مِن شَيْءٍ فِي الْأَرْضِ وَلَا فِي السَّمَاءََُِ",
+                "english": "Our  Lord,  indeed  You  know  what  we  conceal  and  what  we  declare,  and  nothing  is hidden  from Allah on  the  earth  or  in  the  heaven.",
+                "spanish": "¡Señor! Tú sabes bien lo que ocultamos y lo que manifestamos. No hay nada, en la tierra como en el cielo, que se esconda a Alá.  ",
+                "chinses": "我們的主啊！你必定知道我們所隱諱的和我們所表白的。天地間沒有甚麼事物能瞞過真主。   ",
+                "japanses": "主よ，本当にあなたは，わたしたちが隠すことも現わすことも知っておられます。また地にも天にも，アッラーに対し何も隠されたものはありません。",
+                "urdu": " اے ہمارے پروردگار! تو خوب جانتا ہے جو ہم چھپائیں اور جو ﻇاہر کریں۔ زمین و آسمان کی کوئی چیز اللہ پر پوشیده نہیں",
+                "turkish": "Ey Rabbimiz! Sen bizim gizledigimizi de açiga vurdugumuzu da süphesiz bilirsin. Çünkü yerde ve gökte, hiçbir sey Allah'tan gizli kalmaz.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_8.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 16,
+                "aya_no": "39",
+                "arabic": " الْحَمْدُ لِلَّهِ الَّذِي وَهَبَ لِي عَلَى الْكِبَرِ إِسْمَاعِيلَ وَإِسْحَاقَ ۚ إِنَّ رَبِّي لَسَمِيعُ الدُّعَاءََُِ",
+                "english": "Praise  to Allah ,  who  has  granted  to  me  in  old  age  Ishmael  and  Isaac.  Indeed,  my  Lord is  the  Hearer  of  supplication.",
+                "spanish": "¡Alabado sea Alá, Que, a pesar de mi vejez, me ha regalado a Ismael e Isaac! Mi Señor oye, ciertamente, a quien Le invoca.  ",
+                "chinses": "一切讚頌，全歸真主！他在我老邁的時候，賞賜我易司馬儀和易司哈格。我的主確是聽取祈躊的。  ",
+                "japanses": "老年なのに，わたしにイスマーイールとイスハークを授けられた方，アッラーを讃えます。本当にわたしの主は，祈りを御聞き届け下さる方です。",
+                "urdu": " اللہ کا شکر ہے جس نے مجھے اس بڑھاپے میں اسماعیل واسحاق (علیہما السلام) عطا فرمائے۔ کچھ شک نہیں کہ میرا پالنہار اللہ دعاؤں کا سننے واﻻ ہے",
+                "turkish": "Ihtiyarlik halimde bana Ismail'i ve Ishak'i lutfeden Allah'a hamd olsun. Süphesiz ki Rabbim duami çok iyi isitir.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_9.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 17,
+                "aya_no": "40",
+                "arabic": " رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءََُِ",
+                "english": "My  Lord,  make  me  an  establisher  of  prayer,  and  [many]  from  my  descendants.  Our Lord,  and  accept  my  supplication.",
+                "spanish": "¡Señor! ¡Haz que haga la azalá, y también mi descendencia, Señor, y acepta mi invocación!  ",
+                "chinses": "我的主啊！求你使我和一部分後裔謹守拜功。我們的主啊！求你接受我的祈躊。   ",
+                "japanses": "主よ，わたしとわたしの子孫たちを，礼拝の務めを守る者にして下さい。主よ，わたしの祈りを御受け下さい。",
+                "urdu": " اے میرے پالنے والے! مجھے نماز کا پابند رکھ اور میری اوﻻد سے بھی، اے ہمارے رب میری دعا قبول فرما",
+                "turkish": "Ey Rabbim! Beni ve soyumdan gelecekleri namazini dosdogru kilanlardan eyle! Ey Rabbimiz! duami kabul et!",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_10.mp3",
+                "name": "Ibrahim (AS)",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ibrahim",
+            "chapter_no": 14,
+            "aya": [
+              {
+                "index": 18,
+                "aya_no": "41",
+                "arabic": " رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+                "english": "Our  Lord,  forgive  me  and  my  parents  and  the  believers  the  Day  the  account  is established.",
+                "spanish": "¡Señor! Perdónanos, a mí, a mis padres y a los creyentes el día que se ajusten cuentas».   ",
+                "chinses": "我們的主啊！求你在清算實現之日饒恕我和我的雙親和信士們。」    ",
+                "japanses": "主よ，清算が確定する日には，わたしと両親そして（凡ての）信者たちを，御赦し下さい。」",
+                "urdu": " اے ہمارے پروردگار! مجھے بخش دے اور میرے ماں باپ کو بھی بخش اور دیگر مومنوں کو بھی بخش جس دن حساب ہونے لگے",
+                "turkish": "Ey Rabbimiz! Herkesin hesaba çekilecegi günde beni, ana-babami ve müminleri bagisla!",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_11.mp3",
+                "name": "Ibrahim (AS)",
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "chapter_name": "Ibrahim",
+                "chapter_no": 14,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Ash-Shuara",
+            "chapter_no": 26,
+            "aya": [
+              {
+                "index": 19,
+                "aya_no": "83,84,85,86,87,88,89",
+                "arabic": " رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَُ وَاجْعَل لِّي لِسَانَ صِدْقٍ فِي الْآخِرِينَ  وَاجْعَلْنِي مِن وَرَثَةِ جَنَّةِ النَّعِيمِ وَاغْفِرْ لِأَبِي إِنَّهُ كَانَ مِنَ الضَّالِّينَ وَلَا تُخْزِنِي يَوْمَ يُبْعَثُونَ  يَوْمَ لَا يَنفَعُ مَالٌ وَلَا بَنُونَ  إِلَّا مَنْ أَتَى اللَّهَ بِقَلْبٍ سَلِيمٍ ",
+                "english": "[And  he  said],  My  Lord,  grant  me  authority  and  join  me  with  the  righteous. And  grant  me  a  reputation  of  honor  among  later  generations. And  place  me  among  the  inheritors  of  the  Garden  of  Pleasure. And  forgive  my  father.  Indeed,  he  has  been  of  those  astray. And  do  not  disgrace  me  on  the  Day  they  are  [all]  resurrected. The  Day  when  there  will  not  benefit  [anyone]  wealth  or  children. But  only  one  who  comes  to Allah with  a  sound  heart.",
+                "spanish": "¡Señor! ¡Regálame juicio y reúneme con los justos!. ¡Haz que tenga una buena reputación en mi posteridad! .¡Cuéntame entre los herederos del Jardín de la Delicia! .¡Perdona a mi padre, estaba extraviado!. No me avergüences el día de la Resurrección, el día que no aprovechen hacienda ni hijos varones, excepto a quien vaya a Alá con corazón sano».    ",
+                "chinses": "主啊！求你賜我智慧，求你使我進入善人的行列。 求你為我在後人中留一個令名。 求你使我為極樂園的繼承者。 求你赦宥我的父親，他確是迷誤的。 求你不要凌辱我，在他們被復活之日， 即財產和子孫都無裨益之日。」 惟帶著一顆純潔的心來見真主者，（得其裨益）。     ",
+                "japanses": "主よ，英知をわたしに授け，正しい者たちの仲間に入れて下さい。 わたしを後々の世まで真実を伝えた者として下さい。わたしを至福の園を継ぐ者になされ，わたしの父を御赦し下さい。本当にかれは迷った者の仲間ですが。また（人びとが）復活させられる日に，わたしの面目を失わせないで下さい。その日には，財宝も息子たちも，役立ちません。ただ汚れのない心を，アッラーに棒げる者だけは別ですが。」",
+                "urdu": " اے میرے رب! مجھے قوت فیصلہ عطا فرما اور مجھے نیک لوگوں میں ملا دے اور میرا ذکر خیر پچھلے لوگوں میں بھی باقی رکھ مجھے نعمتوں والی جنت کے وارﺛوں میں سے بنادے اور میرے باپ کو بخش دے یقیناً وه گمراہوں میں سے تھا  اور جس دن کے لوگ دوباره جلائے جائیں مجھے رسوا نہ کر جس دن کہ مال اور اوﻻد کچھ کام نہ آئے گی لیکن فائده واﻻ وہی ہوگا جو اللہ تعالیٰ کے سامنے بے عیب دل لے کر جائے",
+                "turkish": "Ya Rab! Bana hikmet (hüküm) ver ve beni iyiler (zümresin)e kat. Sonra gelecekler içinde beni dogrulukla anilanlardan eyle! Ve beni naîm (nimeti bol) cennetin varislerinden eyle! Babami da bagisla, çünkü o yanlis gidenlerdendir. (Insanlarin) diriltilecekleri gün, beni mahcub etme. (Insanlarin) diriltilecekleri gün, beni mahcub etme. Ancak Allah'a temiz bir kalple gelenler o günde (kurtulusa erer). ",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "abrahim_12.mp3",
+                "name": "Ibrahim (AS)",
+                "arabic_name": "حضرت ابرہيم عليہ سلام",
+                "chapter_name": "Ash-Shuara",
+                "chapter_no": 26,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shu'ayb (AS)",
+        "arabic_name": "حضرت شيعب عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Araf",
+            "chapter_no": 7,
+            "aya": [
+              {
+                "index": 20,
+                "aya_no": "89",
+                "arabic": "قَدِ افْتَرَيْنَا عَلَى اللَّهِ كَذِبًا إِنْ عُدْنَا فِي مِلَّتِكُم بَعْدَ إِذْ نَجَّانَا اللَّهُ مِنْهَا ۚ وَمَا يَكُونُ لَنَا أَن نَّعُودَ فِيهَا إِلَّا أَن يَشَاءَ اللَّهُ رَبُّنَا ۚ وَسِعَ رَبُّنَا كُلَّ شَيْءٍ عِلْمًا ۚ عَلَى اللَّهِ تَوَكَّلْنَا ۚ رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَيْرُ الْفَاتِحِينَ",
+                "english": "We  would  have  invented  against Allah a  lie  if  we  returned  to  your  religion  after Allah had  saved  us  from  it.  And  it  is  not  for  us  to  return  to  it  except  that Allah ,  our  Lord, should  will.  Our  Lord  has  encompassed  all  things  in  knowledge.  Upon Allah we  have relied.  Our  Lord,  decide  between  us  and  our  people  in  truth,  and  You  are  the  best  of those  who  give  decision.",
+                "spanish": "Inventaríamos una mentira contra Alá si volviéramos a vuestra religión después de habernos salvado Alá de ella. No podemos volver a ella, a menos que Alá nuestro Señor lo quiera. Nuestro Señor lo abarca todo en Su ciencia. ¡Confiamos en Alá! ¡Señor, falla según Justicia entre nosotros y nuestro pueblo! Tú eres Quien mejor falla».  ",
+                "chinses": "真主使我們脫離你們的宗教後，如果我們再去信它，那末，我們確已假借真主的名義而造謠了。除非真主——我們的主——意欲，我們不會再信你們的宗教。我們的主的知覺是包羅萬物的，我們只信托真主。我們的主啊！求你在我們和我們的宗族之間依真理而判決吧，你是至善的判決者。」 ",
+                "japanses": "アッラーが，わたしたちをあなたがたの宗教から救助された後，もしわたしたちが（それに）戻ったならば，アッラーに対し嘘を捏造したことになってしまいます。またわたしたちの主，アッラーが御好みにならないならば，それに戻ってくることはわたしたちには不可能です。本当に主は，凡ての事物をその御知識に包容なされます。わたしたちはアッラーを信頼申し上げます。主よ，真理によって，わたしたちと人々の間を裁いて下さい。本当にあなたは裁決に最も優れた方であられます。」",
+                "urdu": " ہم تو اللہ تعالیٰ پر بڑی جھوٹی تہمت لگانے والے ہو جائیں گے اگر ہم تمہارے دین میں آجائیں اس کے بعد کہ اللہ تعالیٰ نے ہم کو اس سے نجات دی اور ہم سے ممکن نہیں کہ تمہارے مذہب میں پھر آجائیں، لیکن ہاں یہ کہ اللہ ہی نے جو ہمارا مالک ہے مقدر کیا ہو۔ ہمارے رب کا علم ہر چیز کو محیط ہے، ہم اللہ ہی پر بھروسہ رکھتے ہیں۔ اے ہمارے پروردگار! ہمارے اور ہماری قوم کے درمیان حق کے موافق فیصلہ کر دے اور تو سب سے اچھا فیصلہ کرنے واﻻ ہے",
+                "turkish": "(Andolsun ki), Allah bizi ondan (kâfirlikten) kurtardiktan sonra tekrar sizin dininize dönersek, Allah'a karsi iftira etmis oluruz. Rabbimiz Allah'in dilemesi hali müstesna geri dönmemiz bizim için olacak sey degildir. Rabbimizin ilmi her seyi kusatmistir. Biz sadece Allah'a dayaniriz. Ey Rabbimiz! Bizimle kavmimiz arasinda adaletle hükmet. Çünkü sen hükmedenlerin en hayirlisisin.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "shuayb_1.mp3",
+                "chapter_name": "Al-Araf",
+                "chapter_no": 7,
+                "name": "Younus (AS)",
+                "arabic_name": "حضرت يونس عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Younus (AS)",
+        "arabic_name": "حضرت يونس عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Anbiya",
+            "chapter_no": 21,
+            "aya": [
+              {
+                "index": 21,
+                "aya_no": "87",
+                "arabic": " وَذَا النُّونِ إِذ ذَّهَبَ مُغَاضِبًا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِي الظُّلُمَاتِ أَن لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+                "english": "And  [mention]  the  man  of  the  fish,  when  he  went  off  in  anger  and  thought  that  We would  not  decree  [anything]  upon  him.  And  he  called  out  within  the  darknesses, There  is  no  deity  except  You;  exalted  are  You.  Indeed,  I  have  been  of  the  wrongdoers.",
+                "spanish": "Y al del pez. Cuando se fue airado y creyó que no podríamos hacer nada contra él. Y clamó en las tinieblas: «¡No hay más dios que Tú! ¡Gloria a Ti! He sido de los impíos».  ",
+                "chinses": "（你應當敘述）左農，當時他曾憤憤不平地離去，他猜想我絕不約束地，他在重重黑暗中呼籲（說）：「除你之外，絕無應受崇拜者，我讚頌你超絕萬物，我確是不義的。」     ",
+                "japanses": "またズン・ヌーンである。かれが激怒して出かけた時を思いなさい。かれは，われが自分を難儀させるようなことはないと思いながらも，暗闇の中で，「あなたの外に神はありません。あなたの栄光を讃えます。本当にわたしは不義な者でした。」と叫んだ。",
+                "urdu": " مچھلی والے (حضرت یونس علیہ السلام) کو یاد کرو! جبکہ وه غصہ سے چل دیا اور خیال کیا کہ ہم اسے نہ پکڑ سکیں گے۔ بالﺂخر وه اندھیروں کے اندر سے پکار اٹھا کہ الٰہی تیرے سوا کوئی معبود نہیں تو پاک ہے، بیشک میں ﻇالموں میں ہو گیا",
+                "turkish": "Zünnun'u (balik sahibi Yunus'u) da hatirla. Hani o, öfkelenerek gitmisti de, bizim kendisini hiçbir zaman sikistirmayacagimizi sanmisti. Fakat sonunda karanliklar içinde: Senden baska ilâh yoktur, sen münezzehsin, Süphesiz ben haksizlik edenlerden oldum diye seslenmisti.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "younus_1.mp3",
+                "chapter_name": "Al-Anbiya",
+                "name": "Younus (AS)",
+                "arabic_name": "حضرت يونس عليہ سلام",
+                "chapter_no": 21,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ayyub (AS)",
+        "arabic_name": "حضرت ايوب عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Anbiya",
+            "chapter_no": 21,
+            "aya": [
+              {
+                "index": 22,
+                "aya_no": "83",
+                "arabic": " وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+                "english": "And  [mention]  Job,  when  he  called  to  his  Lord,  Indeed,  adversity  has  touched  me,  and you  are  the  Most  Merciful  of  the  merciful.",
+                "spanish": "Y a Job. Cuando invocó a su Señor: «¡He sufrido una desgracia, pero Tú eres la Suma Misericordia!»  ",
+                "chinses": "（你應當敘述）艾優卜，當時他曾呼籲他的主（說）：「痼疾確已傷害我，你是最仁慈的。」     ",
+                "japanses": "またアイユーブ（に英知と判断力を授けた）。かれは主に呼びかけた。「本当に災厄がわたしに降りかかりました。だがあなたは，慈悲深いうえにも慈悲深い方であられます。」",
+                "urdu": " ایوب (علیہ السلام) کی اس حالت کو یاد کرو جبکہ اس نے اپنے پروردگار کو پکارا کہ مجھے یہ بیماری لگ گئی ہے اور تو رحم کرنے والوں سے زیاده رحم کرنے واﻻ ہے",
+                "turkish": "Eyyûb da: Basima bir bela geldi, (sana sigindim), sen merhametlilerin en merhametlisisin diye Rabbine nida etti.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "ayub_1.mp3",
+                "chapter_name": "Al-Anbiya",
+                "name": "Ayyub (AS)",
+                "arabic_name": "حضرت ايوب عليہ سلام",
+                "chapter_no": 21,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Sud",
+            "chapter_no": 38,
+            "aya": [
+              {
+                "index": 23,
+                "aya_no": "41",
+                "arabic": " وَاذْكُرْ عَبْدَنَا أَيُّوبَ إِذْ نَادَىٰ رَبَّهُ أَنِّي مَسَّنِيَ الشَّيْطَانُ بِنُصْبٍ وَعَذَابٍَ",
+                "english": "And  remember  Our  servant  Job,  when  he  called  to  his  Lord,  Indeed,  Satan  has  touched me  with  hardship  and  torment.",
+                "spanish": "¡Y recuerda a nuestro siervo Job! Cuando invocó a su Señor. «El Demonio me ha infligido una pena y un castigo».  ",
+                "chinses": "你應當記憶我的僕人安優卜。當時，他祈禱他的主說：「惡魔確已使我遭受辛苦和刑罰。」      ",
+                "japanses": "わがしもべ，アイユーブを思い起しなさい。かれが主に向かって，「シャイターンがわたしを悩ませ，苦しみ抜いているのです。」と叫んだ時を思い起しなさい。",
+                "urdu": " اور ہمارے بندے ایوب (علیہ السلام) کا (بھی) ذکر کر، جبکہ اس نے اپنے رب کو پکارا کہ مجھے شیطان نے رنج اور دکھ پہنچایا ہے",
+                "turkish": "Kulumuz Eyyub'u da an. Bir zaman o, Rabbine söyle nida etmisti: Mesakkat ve aci ile bana seytan dokundu.",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "mp3_file_path": "ayub_2.mp3",
+                "chapter_name": "Sud",
+                "name": "Ayyub (AS)",
+                "arabic_name": "حضرت ايوب عليہ سلام",
+                "chapter_no": 38,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Yousuf (AS)",
+        "arabic_name": "حضرت يوسف عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Yousuf",
+            "chapter_no": 12,
+            "aya": [
+              {
+                "index": 24,
+                "aya_no": "33",
+                "arabic": " قَالَ رَبِّ السِّجْنُ أَحَبُّ إِلَيَّ مِمَّا يَدْعُونَنِي إِلَيْهِ ۖ وَإِلَّا تَصْرِفْ عَنِّي كَيْدَهُنَّ أَصْبُ إِلَيْهِنَّ وَأَكُن مِّنَ الْجَاهِلِينََ",
+                "english": "He  said,  My  Lord,  prison  is  more  to  my  liking  than  that  to  which  they  invite  me.  And if  You  do  not  avert  from  me  their  plan,  I  might  incline  toward  them  and  [thus]  be  of  the ignorant.",
+                "spanish": "Dijo él: «¡Señor! Prefiero la cárcel a acceder a lo que ellas me piden. Pero, si no apartas de mí su astucia, cederé a ellas y seré de los ignorantes».  ",
+                "chinses": "他說：「我的主啊！我寧願坐牢，也不願響應她們的召喚。如果你不為我排除她們的詭計，我將依戀她們，我將變成愚人。」       ",
+                "japanses": "かれ（ユースフ）は言った。「主よ，わたしはかの女たちが誘惑するものよりも，牢獄が向いています。あなたがもしかの女たちの悪企みを，わたしから取り除いて下さらなければ，わたしは（若年の弱さで）かの女たちに傾いて，無道な者になるでしょう。」",
+                "urdu": " یوسف نے دعا کی کہ اے میرے پروردگار! جس بات کی طرف یہ عورتیں مجھے بلا رہی ہیں اس سے تو مجھے جیل خانہ بہت پسند ہے، اگر تو نے ان کا فن فریب مجھ سے دور نہ کیا تو میں تو ان کی طرف مائل ہو جاؤں گا اور بالکل نادانوں میں جا ملوں گا",
+                "turkish": "Yusuf dedi ki: Ey Rabbim! Zindan bana, bunlarin beni davet ettikleri seyden daha sevimlidir. Eger sen, bu kadinlarin tuzaklarini benden uzak tutmazsan, ben onlarin tuzagina düserim ve cahillik edenlerden olurum.",
+                "mp3_file_path": "yousuf_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "chapter_name": "Yousuf",
+                "name": "Yousuf (AS)",
+                "arabic_name": "حضرت يوسف عليہ سلام",
+                "chapter_no": 12,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Yousuf",
+            "chapter_no": 12,
+            "aya": [
+              {
+                "index": 25,
+                "aya_no": "101",
+                "arabic": " رَبِّ قَدْ آتَيْتَنِي مِنَ الْمُلْكِ وَعَلَّمْتَنِي مِن تَأْوِيلِ الْأَحَادِيثِ ۚ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينََ",
+                "english": "My  Lord,  You  have  given  me  [something]  of  sovereignty  and  taught  me  of  the interpretation  of  dreams.  Creator  of  the  heavens  and  earth,  You  are  my  protector  in this  world  and  in  the  Hereafter.  Cause  me  to  die  a  Muslim  and  join  me  with  the righteous.",
+                "spanish": "¡Señor! Tú me has dado del dominio y me has enseñado a interpretar sueños. ¡Creador de los cielos y de la tierra! ¡Tú eres mi Amigo en la vida de acá y en la otra! ¡Haz que cuando muera lo haga sometido a Ti y me reúna con los justos!»  ",
+                "chinses": "我的主啊！你確已賞賜我一部分政權，並教給我一些圓夢的知識。天地的創造者啊！在今世和後世，你都是我的主宰。求你使我作為順從者而死去，求你使我入於善人之列。」        ",
+                "japanses": "主よ，あなたはわたしに権能を授けられ，また出来事の解釈を御教えになりました。天と地の創造の主よ，あなたは現世と来世でのわたしの守護者です。あなたは，わたしをムスリムとして死なせ，正義の徒の中に加えて下さい。」",
+                "urdu": " اے میرے پروردگار! تو نے مجھے ملک عطا فرمایا اور تو نے مجھے خواب کی تعبیر سکھلائی۔ اے آسمان وزمین کے پیدا کرنے والے! تو ہی دنیا وآخرت میں میرا ولی (دوست) اور کارساز ہے، تو مجھے اسلام کی حالت میں فوت کر اور نیکوں میں ملا دے",
+                "turkish": "Ey Rabbim! Sen bana dünya mülkünden nasip verdin ve bana rüyalarin tabirinden bir ilim ögrettin. Ey gökleri ve yeri yoktan var eden Rabbim! Benim velim sensin, benim canimi müslüman olarak al ve beni salih kullarin arasina kat! {*} Hasili, ne zaman ki, Yusuf'a vardilar, yani Yusuf'un daha önce kardeslerine tenbih edip istedigi gibi, basta babalari olmak üzere bütün aile bireyleri topluca Misir'a gelip Yusuf'un yanina vardilar. Rivayet olunur ki, Yusuf ve Melik, yanlarinda dört bin asker, birtakim devlet adamlari ve Misir halkindan çok sayida insan, gelen kafileyi karsilamaya çikmislardi. Yakub Aleyhisselam, oglu Yahuda'ya dayanarak yürüyordu, karsidan gelen kafileye ve atlilara bakip, Ey Yahuda, su karsidaki adam Misir'in Firavun'u mu? diye sordu. O da Hayir, Firavun degil, oglun dedi. Yaklastiklari zaman Yusuf'dan önce Yakup selam verdi ve Selam sana ey hüzünleri gideren dedi{*}ilh.",
+                "mp3_file_path": "yousuf_2.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "chapter_name": "Yousuf",
+                "name": "Yousuf (AS)",
+                "arabic_name": "حضرت يوسف عليہ سلام",
+                "chapter_no": 12,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Musa (AS)",
+        "arabic_name": "حضرت موسئ عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Maeda",
+            "chapter_no": 5,
+            "aya": [
+              {
+                "index": 26,
+                "aya_no": "25",
+                "arabic": " قَالَ رَبِّ إِنِّي لَا أَمْلِكُ إِلَّا نَفْسِي وَأَخِي ۖ فَافْرُقْ بَيْنَنَا وَبَيْنَ الْقَوْمِ الْفَاسِقِينَ",
+                "english": "[Moses]  said,  My  Lord,  indeed  I  do  not  possess  except  myself  and  my  brother,  so  part us  from  the  defiantly  disobedient  people.",
+                "spanish": "Dijo: «¡Señor! Yo no puedo más que conmigo y con mi hermano. Haz distinción, pues, entre nosotros y este pueblo perverso». ",
+                "chinses": "他說：「我的主啊！除我自己和我哥哥外，我不能作主，我求你使我們和犯罪的民眾分開。」         ",
+                "japanses": "かれは申し上げた。「主よ，本当にわたしはわたし自身と兄弟の外は制御出来ません。ですからわたしたちを，この反逆の民から引き離して下さい。」",
+                "urdu": " موسیٰ (علیہ السلام) کہنے لگے الٰہی! مجھے تو بجز اپنے اور میرے بھائی کے کسی اور پر کوئی اختیار نہیں، پس تو ہم میں اور ان نافرمانوں میں جدائی کردے",
+                "turkish": "Musa: Ey Rabbim! Ben, kendimle kardesimden baskasina söz geçiremiyorum, artik bizimle bu fâsik kavmin arasini ayir dedi.",
+                "mp3_file_path": "moses_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Maeda",
+                "chapter_no": 5,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Araf",
+            "chapter_no": 7,
+            "aya": [
+              {
+                "index": 27,
+                "aya_no": "143",
+                "arabic": " وَلَمَّا جَاءَ مُوسَىٰ لِمِيقَاتِنَا وَكَلَّمَهُ رَبُّهُ قَالَ رَبِّ أَرِنِي أَنظُرْ إِلَيْكَ ۚ قَالَ لَن تَرَانِي وَلَٰكِنِ انظُرْ إِلَى الْجَبَلِ فَإِنِ اسْتَقَرَّ مَكَانَهُ فَسَوْفَ تَرَانِي ۚ فَلَمَّا تَجَلَّىٰ رَبُّهُ لِلْجَبَلِ جَعَلَهُ دَكًّا وَخَرَّ مُوسَىٰ صَعِقًا ۚ فَلَمَّا أَفَاقَ قَالَ سُبْحَانَكَ تُبْتُ إِلَيْكَ وَأَنَا أَوَّلُ الْمُؤْمِنِينَ",
+                "english": "And  when  Moses  arrived  at  Our  appointed  time  and  his  Lord  spoke  to  him,  he  said, My  Lord,  show  me  [Yourself]  that  I  may  look  at  You.  [ Allah ]  said,  You  will  not  see Me,  but  look  at  the  mountain;  if  it  should  remain  in  place,  then  you  will  see  Me.  But when  his  Lord  appeared  to  the  mountain,  He  rendered  it  level,  and  Moses  fell unconscious.  And  when  he  awoke,  he  said,  Exalted  are  You!  I  have  repented  to  You, and  I  am  the  first  of  the  believers.",
+                "spanish": "Dijo: «¡Señor! Yo no puedo más que conmigo y con mi hermano. Haz distinción, pues, entre nosotros y este pueblo perverso». ",
+                "chinses": "當穆薩為了我的會期而來，而且他的主對他說了話的時候，他說：「我的主啊！求你昭示我，以便我看見你。」主說：「你不能看見我，但你看那座山吧。如果它能在它的本位上堅定，那末，你就能看見我。」當他的主對那座山微露光華的時候，他使那座山變成粉碎的。穆薩暈倒在地上。當他甦醒的時候，他說：「我讚頌你超絕萬物，我向你悔罪，我是首先信道的。」 他說：「我的主啊！除我自己和我哥哥外，我不能作主，我求你使我們和犯罪的民眾分開。」         ",
+                "japanses": "ムーサーがわれの約束した時に来て，主がかれに語りかけられた時，かれは申し上げた。「主よ，あなたに拝謁が出来るように，（親しく）わたしに姿を御現わし下さい。」かれは仰せられた。「あなたは決してわれを見ることは出来ない。だがあの山を見よ。もしそれが，相変わらずその所に安定しておれば，そこにあなたはわれを見るであろう。」主がその山に（神の御光を）現わして山を粉みじんにすると，ムーサーは（余りにも恐ろしいので）気絶して倒れた。意識が回復した時かれは言った。「あなたの栄光を讃えます。わたしは悔悟してあなたに帰依し，わたしは信仰する者の先き駆けとなります。」",
+                "urdu": " اور جب موسیٰ (علیہ السلام) ہمارے وقت پر آئے اور ان کے رب نے ان سے باتیں کیں تو عرض کیا کہ اے میرے پروردگار! اپنا دیدار مجھ کو کرا دیجئے کہ میں آپ کو ایک نظر دیکھ لوں ارشاد ہوا کہ تم مجھ کو ہرگز نہیں دیکھ سکتے لیکن تم اس پہاڑ کی طرف دیکھتے رہو وه اگر اپنی جگہ پر برقرار رہا تو تم بھی مجھے دیکھ سکو گے۔ پس جب ان کے رب نے پہاڑ پر تجلی فرمائی تو تجلی نے اس کے پرخچے اڑا دیئے اور موسیٰ (علیہ السلام) بےہوش ہوکر گر پڑے۔ پھر جب ہوش میں آئے تو عرض کیا، بےشک آپ کی ذات منزه ہے میں آپ کی جناب میں توبہ کرتا ہوں اور میں سب سے پہلے آپ پر ایمان ﻻنے واﻻ ہوں",
+                "turkish": "Ne zaman ki, Musa, mikatimiza geldi, Rabbi ona kelâmiyla ihsanda bulundu. Ey Rabbim, göster bana kendini de bakayim sana. dedi. Rabbi ona buyurdu ki; Beni katiyyen göremezsin ve lâkin daga bak, eger o yerinde durabilirse, sonra sen de beni göreceksin. Daha sonra Rabbi daga tecelli edince onu yerle bir ediverdi, Musa da baygin düstü. Ayilip kendine gelince, Sen sübhansin, tevbe ettim, sana döndüm ve ben inananlarin ilkiyim, dedi.",
+                "mp3_file_path": "moses_2.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Araf",
+                "chapter_no": 7,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Araf",
+            "chapter_no": 7,
+            "aya": [
+              {
+                "index": 28,
+                "aya_no": "151",
+                "arabic": " قَالَ رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ ۖ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+                "english": "[Moses]  said,  My  Lord,  forgive  me  and  my  brother  and  admit  us  into  Your  mercy,  for You  are  the  most  merciful  of  the  merciful.",
+                "spanish": "Dijo: «¡Señor! ¡Perdónanos a mí y a mi hermano, e introdúcenos en Tu misericordia! Tú eres la Suma Misericordia».  ",
+                "chinses": "穆薩說：「我的主啊！求你赦宥我和我哥哥，求你使我們進入你的慈恩之中，你是至仁至慈的。」          ",
+                "japanses": "かれ（ムーサー）は（祈って）言った。「主よ，わたしとわたしの兄を赦し，あなたの慈悲に浴させて下さい。本当にあなたは，慈悲深い者の中でも最も慈悲深い方です。」",
+                "urdu": " موسیٰ (علیہ السلام) نے کہا کہ اے میرے رب! میری خطا معاف فرما اور میرے بھائی کی بھی اور ہم دونوں کو اپنی رحمت میں داخل فرما اور تو سب رحم کرنے والوں سے زیاده رحم کرنے واﻻ ہے",
+                "turkish": "Musa dedi ki: Ey Rabbim! Beni ve kardesimi bagisla! Bizi rahmetinin içine al. Sen merhametlilerin en merhametlisisin.",
+                "mp3_file_path": "moses_3.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Araf",
+                "chapter_no": 7,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Qasas",
+            "chapter_no": 28,
+            "aya": [
+              {
+                "index": 29,
+                "aya_no": "16",
+                "arabic": " قَالَ رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي فَغَفَرَ لَهُ ۚ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ",
+                "english": "He  said,  My  Lord,  indeed  I  have  wronged  myself,  so  forgive  me,  and  He  forgave  him. Indeed,  He  is  the  Forgiving,  the  Merciful.",
+                "spanish": "Dijo: «¡Señor! He sido injusto conmigo mismo. ¡Perdóname!» Y le perdonó. Él es el Indulgente, el Misericordioso.  ",
+                "chinses": "他說：「我的主啊！我確已自欺了，求你饒恕我吧。」真主就饒恕了他，他確是至赦的，確是至慈的。           ",
+                "japanses": "かれは（祈って）言った。「主よ，本当にわたしは自ら不義を犯しました。どうかわたしを御赦し下さい。」それで（アッラーは）かれを赦された。本当にかれは覚容にして慈悲深くあられる。",
+                "urdu": "پھر دعا کرنے لگے کہ اے پروردگار! میں نے خود اپنے اوپر ﻇلم کیا، تو مجھے معاف فرما دے، اللہ تعالیٰ نے اسے بخش دیا، وه بخشش اور بہت مہربانی کرنے واﻻ ہے",
+                "turkish": "Musa, Rabbim! Dogrusu kendimi ziyana ugrattim. Beni bagisla! dedi; Allah da, onu bagisladi. Çünkü, çok bagislayici, çok merhamet edici olan ancak O'dur.",
+                "mp3_file_path": "moses_4.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Qasas",
+                "chapter_no": 28,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Qasas",
+            "chapter_no": 28,
+            "aya": [
+              {
+                "index": 30,
+                "aya_no": "17",
+                "arabic": " قَالَ رَبِّ بِمَا أَنْعَمْتَ عَلَيَّ فَلَنْ أَكُونَ ظَهِيرًا لِّلْمُجْرِمِينَ",
+                "english": "He  said,  My  Lord,  for  the  favor  You  bestowed  upon  me,  I  will  never  be  an  assistant  to the  criminals.",
+                "spanish": "Dijo: «¡Señor! Por las gracias que me has dispensado, no respaldaré a los pecadores».  ",
+                "chinses": "他說：「我的主啊！我借你所賜我的恩典而求你保祐我，我絕不做犯罪者的助手。」            ",
+                "japanses": "かれは申し上げた。「主よ，あなたはわたしに恩恵を与えて下さいました。だからわたしは，もう決して罪を犯す者たちの味方にはなりません。」",
+                "urdu": "کہنے لگے اے میرے رب! جیسے تو نے مجھ پر یہ کرم فرمایا میں بھی اب ہرگز کسی گنہگار کا مددگار نہ بنوں گا",
+                "turkish": "Musa, Rabbim! Bana lutfettigin nimetlere andolsun ki, artik suçlulara asla arka olmayacagim dedi.",
+                "mp3_file_path": "moses_5.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Qasas",
+                "chapter_no": 28,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Qasas",
+            "chapter_no": 28,
+            "aya": [
+              {
+                "index": 31,
+                "aya_no": "24",
+                "arabic": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰ إِلَى الظِّلِّ فَقَالَ رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+                "english": "So  he  watered  [their  flocks]  for  them;  then  he  went  back  to  the  shade  and  said,  My Lord,  indeed  I  am,  for  whatever  good  You  would  send  down  to  me,  in  need.",
+                "spanish": "Y abrevó su rebaño. Luego, se retiró a la sombra. Y dijo: «¡Señor! Me hace mucha falta cualquier bien que quieras hacerme».  ",
+                "chinses": "他就替她倆飲羊，然後退到樹蔭下，他說：「我的主啊！我確需求你所降給我的任何福利的。」             ",
+                "japanses": "そこでかれは2人のために（家畜の群に）水をやり，それから木陰に退いて（祈って）言った。「主よ，あなたがわたしに御授けになる，何か善いものが欲しいのです。」",
+                "urdu": "پس آپ نے خود ان جانوروں کو پانی پلا دیا پھر سائے کی طرف ہٹ آئے اور کہنے لگے اے پروردگار! تو جو کچھ بھلائی میری طرف اتارے میں اس کا محتاج ہوں",
+                "turkish": "Bunun üzerine Musa, onlarin davarlarini suladi. Sonra gölgeye çekildi ve Rabbim! Dogrusu bana indirecegin her hayra muhtacim dedi.",
+                "mp3_file_path": "moses_6.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Al-Qasas",
+                "chapter_no": 28,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Taha",
+            "chapter_no": 20,
+            "aya": [
+              {
+                "index": 32,
+                "aya_no": "25",
+                "arabic": "قَالَ رَبِّ اشْرَحْ لِي صَدْرِي",
+                "english": "[Moses]  said,  My  Lord,  expand  for  me  my  breast  [with  assurance]",
+                "spanish": "Dijo: «¡Señor! ¡Infúndeme ánimo!  ",
+                "chinses": "他說：「我的主啊！求你使我的心情舒暢，              ",
+                "japanses": "かれは（祈って）言った。「主よ，わたしの胸を広げて下さい。",
+                "urdu": "موسیٰ (علیہ السلام) نے کہا اے میرے پروردگار! میرا سینہ میرے لئے کھول دے",
+                "turkish": "Musa dedi ki: Ey Rabbim! Benim gögsüme genislik ver",
+                "mp3_file_path": "moses_7.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Taha",
+                "chapter_no": 20,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Yunus",
+            "chapter_no": 10,
+            "aya": [
+              {
+                "index": 33,
+                "aya_no": "88",
+                "arabic": "وَقَالَ مُوسَىٰ رَبَّنَا إِنَّكَ آتَيْتَ فِرْعَوْنَ وَمَلَأَهُ زِينَةً وَأَمْوَالًا فِي الْحَيَاةِ الدُّنْيَا رَبَّنَا لِيُضِلُّوا عَن سَبِيلِكَ ۖ رَبَّنَا اطْمِسْ عَلَىٰ أَمْوَالِهِمْ وَاشْدُدْ عَلَىٰ قُلُوبِهِمْ فَلَا يُؤْمِنُوا حَتَّىٰ يَرَوُا الْعَذَابَ الْأَلِيمَ",
+                "english": "And  Moses said,  Our  Lord,  indeed  You  have  given  Pharaoh  and  his  establishment splendor  and  wealth  in  the  worldly  life,  our  Lord,  that  they may  lead [men]  astray  from Your  way. Our  Lord,  obliterate  their  wealth  and  harden  their  hearts  so  that  they  will not  believe  until  they  see  the  painful  punishment.",
+                "spanish": "Moisés dijo: «¡Señor! Tú has dado a Faraón y a sus dignatarios lujo y bienes en la vida de acá para terminar, ¡Señor!. extraviando a otros de Tu camino. ¡Señor! ¡Borra sus bienes y endurece sus corazones a fin de que no crean hasta que vean el castigo doloroso!» ",
+                "chinses": "穆薩說：「我們的主啊！你把各種裝飾品和今世生活的各種財產給予法老和他的貴族們——我們的主啊！——以致他們使民眾背離你的大道。我們的主啊！求你毀掉他們的財產，求你封閉他們的心。但願他們不信道，直到看見痛苦的刑罰。」",
+                "japanses": "ムーサーは申し上げた。「主よ，本当にあなたはフィルアウンとその首長たちに，現世の生活の栄華裕福を御授けになりました。主よ，かれらがあなたの道から迷い出てしまいますように。主よ，かれらの富を滅ぼされ，かれらの心を頑固にして下さい。それ故痛ましい懲罰が下るまで，かれらは信じないでしょう。」",
+                "urdu": "موسیٰ (علیہ السلام) نے کہا اے میرے پروردگار! میرا سینہ میرے لئے کھول دے",
+                "turkish": "Musa dedi ki: Ey Rabbim! Benim gögsüme genislik ver",
+                "mp3_file_path": "moses_8.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Musa (AS)",
+                "arabic_name": "حضرت موسئ عليہ سلام",
+                "chapter_name": "Yunus",
+                "chapter_no": 10,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Taloot (AS)",
+        "arabic_name": "حضرت طالوت عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Baqara",
+            "chapter_no": 2,
+            "aya": [
+              {
+                "index": 34,
+                "aya_no": "250",
+                "arabic": " وَلَمَّا بَرَزُوا لِجَالُوتَ وَجُنُودِهِ قَالُوا رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+                "english": "And when they went forth to [face] Goliath and his soldiers, they said, Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving people.",
+                "spanish": "Y, cuando salieron contra Goliat y sus soldados, dijeron: «¡Señor! ¡Infunde en nosotros paciencia, afirma nuestros pasos, auxílianos contra el pueblo infiel!»  ",
+                "chinses": "當他們出去與查魯特和他的軍隊交戰的時候，他們祈禱說：「我們的主啊！求你把堅忍注入我們的心中，求你堅定我們的步伐，求你援助我們以對抗不信道的民眾。」        ",
+                "japanses": "それからかれらは進んで，ジャールートとその軍勢に見えんとする時，（祈って）言った。「主よ，わたしたちに不屈の精神を注ぎ込んで下さい。わたしたちの足場を固めて，不信心の民に対し，わたしたちを御助け下さい。」",
+                "urdu": " اور موسیٰ (علیہ السلام) نے عرض کیا اے ہمارے رب! تو نے فرعون کو اور اس کے سرداروں کو سامان زینت اور طرح طرح کے مال دنیاوی زندگی میں دیئے۔ اے ہمارے رب! (اسی واسطے دیئے ہیں کہ) وه تیری راه سے گمراه کریں۔ اے ہمارے رب! ان کے مالوں کو نیست ونابود کر دے اور ان کے دلوں کو سخت کردے سو یہ ایمان نہ ﻻنے پائیں یہاں تک کہ دردناک عذاب کو دیکھ لیں",
+                "turkish": "Musa dedi: Ey Rabbimiz! Sen Firavun'a ve adamlarina su dünya hayatinda göz kamastirici zenginlik ve bol bol servet verdin. Ey Rabbimiz! Senin yolundan saptirsinlar diye mi? Ey Rabbimiz! Onlarin mallarini sil süpür ve kalblerine sikinti düsür. Çünkü onlar o acikli azabi görmedikçe iman etmeyecekler.",
+                "mp3_file_path": "talot_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Taloot (AS)",
+                "arabic_name": "حضرت طالوت عليہ سلام",
+                "chapter_name": "Al-Baqara",
+                "chapter_no": 2,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sulayman (AS)",
+        "arabic_name": "حضرت سيلمان عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "An-Namal",
+            "chapter_no": 27,
+            "aya": [
+              {
+                "index": 35,
+                "aya_no": "19",
+                "arabic": " فَتَبَسَّمَ ضَاحِكًا مِّن قَوْلِهَا وَقَالَ رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
+                "english": "So  [Solomon]  smiled,  amused  at  her  speech,  and  said,  My  Lord,  enable  me  to  be grateful  for  Your  favor  which  You  have  bestowed  upon  me  and  upon  my  parents  and to  do  righteousness  of  which  You  approve.  And  admit  me  by  Your  mercy  into  [the ranks  of]  Your  righteous  servants.",
+                "spanish": "Sonrió al oír lo que ella decía y dijo: «¡Señor! ¡Permíteme que Te agradezca la gracia que nos has dispensado, a mí y a mis padres! ¡Haz que haga obras buenas que Te plazcan! ¡Haz que entre a formar parte, por Tu misericordia, de Tus siervos justos!»  ",
+                "chinses": "素萊曼為她的話而詫異地微笑了，他說：「我的主啊！求你啟示我，使我常常感謝你所賜我和我的父母的恩惠，並使我常常作你所喜悅的善功，求你借你的恩惠使我得入你的善良的僕人之例。」         ",
+                "japanses": "そこでかれ（スライマーン）は，その言葉の可笑しさに顔を綻ばせ，（祈って）言った。「主よ，わたしと両親に与えられたあなたの恩恵に感謝し，あなたの御喜びに与かる善行に励むようわたしを励まし，またあなたの慈悲で，わたしを正しいしもベの中に入らせて下さい。」",
+                "urdu": "اس کی اس بات سے حضرت سلیمان مسکرا کر ہنس دیئے اور دعا کرنے لگے کہ اے پروردگار! تو مجھے توفیق دے کہ میں تیری ان نعمتوں کا شکر بجا ﻻؤں جو تو نے مجھ پر انعام کی ہیں اور میرے ماں باپ پر اور میں ایسے نیک اعمال کرتا رہوں جن سے تو خوش رہے مجھے اپنی رحمت سے نیک بندوں میں شامل کر لے",
+                "turkish": "(Süleyman) onun sözüne gülümseyerek dedi ki: Ey Rabbim! Bana ve ana babama verdigin nimete sükretmemi ve hosnut olacagin iyi is yapmami gönlüme getir. Rahmetinle, beni iyi kullarin arasina kat.",
+                "mp3_file_path": "solomon_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "chapter_name": "An-Namal",
+                "name": "Sulayman (AS)",
+                "arabic_name": "حضرت سيلمان عليہ سلام",
+                "chapter_no": 27,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Sud",
+            "chapter_no": 38,
+            "aya": [
+              {
+                "index": 36,
+                "aya_no": "35",
+                "arabic": "قَالَ رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا لَّا يَنبَغِي لِأَحَدٍ مِّن بَعْدِي ۖ إِنَّكَ أَنتَ الْوَهَّابُ ",
+                "english": "He  said,  My  Lord,  forgive  me  and  grant  me  a  kingdom  such  as  will  not  belong  to  anyone after  me.  Indeed,  You  are  the  Bestower.",
+                "spanish": "«¡Señor!» dijo. «¡Perdóname y regálame un dominio tal que a nadie después de mí le esté bien. Tú eres el Munífico».  ",
+                "chinses": "他說：「我的主啊！求你赦宥我，求你賞賜我一個非任何人所宜繼承的國權。你確是博施的。」          ",
+                "japanses": "言った。「主よ，わたしを御赦し下さい。そして後世の誰も持ち得ない程の王国をわたしに御与え下さい。本当にあなたは豊かに与えられる方です。」",
+                "urdu": "کہا کہ اے میرے رب! مجھے بخش دے اور مجھے ایسا ملک عطا فرما جو میرے سوا کسی (شخص) کے ﻻئق نہ ہو، تو بڑا ہی دینے واﻻ ہے",
+                "turkish": "Süleyman: Ey Rabbim! Beni bagisla ve bana öyle bir mülk ihsan et ki, ardimdan hiç kimseye yarasmasin. Süphesiz, bütün dilekleri veren sensin. dedi.",
+                "mp3_file_path": "solomon_2.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "chapter_name": "Sud",
+                "name": "Sulayman (AS)",
+                "arabic_name": "حضرت سيلمان عليہ سلام",
+                "chapter_no": 38,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zakariyya (AS)",
+        "arabic_name": "حضرت زکريا عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Aal-e-Imran",
+            "chapter_no": 3,
+            "aya": [
+              {
+                "index": 37,
+                "aya_no": "38",
+                "arabic": " هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُ ۖ قَالَ رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ",
+                "english": "At  that,  Zechariah  called  upon  his  Lord,  saying,  My  Lord,  grant  me  from  Yourself  a good  offspring.  Indeed,  You  are  the  Hearer  of  supplication.",
+                "spanish": "Entonces, Zacarías invocó a su Señor diciendo: «¡Señor! ¡Regálame, de Ti, una descendencia buena! Tú escuchas a quien Te invoca». ",
+                "chinses": "在那裡，宰凱里雅就祈禱他的主，說：「我的主啊！求你從你那裡賞賜我一個善良的子嗣。你確是聽取祈禱的。」       ",
+                "japanses": "そこでザカリーヤーは，主に祈って言った。「主よ，あなたの御許から，無垢の後継ぎをあたしに御授け下さい。本当にあなたは祈りを御聞き届け下さいます。」",
+                "urdu": " اسی جگہ زکریا (علیہ السلام) نے اپنے رب سے دعا کی، کہا کہ اے میرے پروردگار! مجھے اپنے پاس سے پاکیزه اوﻻد عطا فرما، بے شک تو دعا کا سننے واﻻ ہے",
+                "turkish": "Orada Zekeriyya, Rabbine dua etti: Rabbim! Bana katindan hayirli bir nesil ver. Süphesiz sen, duayi hakkiyle isitensin dedi.",
+                "mp3_file_path": "zakria_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Zakariyya (AS)",
+                "arabic_name": "حضرت زکريا عليہ سلام",
+                "chapter_name": "Aal-e-Imran",
+                "chapter_no": 3,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Al-Anbiya",
+            "chapter_no": 21,
+            "aya": [
+              {
+                "index": 38,
+                "aya_no": "89",
+                "arabic": " وَزَكَرِيَّا إِذْ نَادَىٰ رَبَّهُ رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ",
+                "english": "And  [mention]  Zechariah,  when  he  called  to  his  Lord,  My  Lord,  do  not  leave  me  alone [with  no  heir],  while  you  are  the  best  of  inheritors.",
+                "spanish": "Y a Zacarías. Cuando invocó a su Señor: «¡Señor! ¡No me dejes solo! ¡Pero Tú eres el Mejor de los herederos!»  ",
+                "chinses": "（你應當敘述）宰凱里雅，當時他曾呼籲他的主（說）：「我的主啊！求你不要任隨我孤獨，你是最好的繼承者。」      ",
+                "japanses": "またザカリーヤーである。かれが主に（祈って），「主よ，最も優れた相続者であられる御方よ。わたしを孤独のまま放って置かないで下さい。」と叫んだ時のことを思いなさい。",
+                "urdu": " اور زکریا (علیہ السلام) کو یاد کرو جب اس نے اپنے رب سے دعا کی کہ اے میرے پروردگار! مجھے تنہا نہ چھوڑ، تو سب سے بہتر وارث ہے",
+                "turkish": "Zekeriya da hani Rabbine: Rabbim! Beni tek basima birakma, sen varislerin en hayirlisisin diye nida etmisti.",
+                "mp3_file_path": "zakria_2.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Zakariyya (AS)",
+                "arabic_name": "حضرت زکريا عليہ سلام",
+                "chapter_name": "Al-Anbiya",
+                "chapter_no": 21,
+                "favorite": 0
+              }
+            ]
+          },
+          {
+            "chapter_name": "Maryum",
+            "chapter_no": 19,
+            "aya": [
+              {
+                "index": 39,
+                "aya_no": "4",
+                "arabic": " قَالَ رَبِّ إِنِّي وَهَنَ الْعَظْمُ مِنِّي وَاشْتَعَلَ الرَّأْسُ شَيْبًا وَلَمْ أَكُن بِدُعَائِكَ رَبِّ شَقِيًّا وَإِنِّي خِفْتُ الْمَوَالِيَ مِن وَرَائِي وَكَانَتِ امْرَأَتِي عَاقِرًا فَهَبْ لِي مِن لَّدُنكَ وَلِيًّا يَرِثُنِي وَيَرِثُ مِنْ آلِ يَعْقُوبَ ۖ وَاجْعَلْهُ رَبِّ رَضِيًّا",
+                "english": "He  said,  My  Lord,  indeed  my  bones  have  weakened,  and  my  head  has  filled  with white,  and  never  have  I  been  in  my  supplication  to  You,  my  Lord,  unhappy. And  indeed,  I  fear  the  successors  after  me,  and  my  wife  has  been  barren,  so  give  me from  Yourself  an  heir. Who  will  inherit  me  and  inherit  from  the  family  of  Jacob.  And  make  him,  my  Lord, pleasing  [to  You].",
+                "spanish": "Dijo: «¡Señor! Se me han debilitado los huesos, mis cabellos han encanecido. Cuando Te he invocado, Señor, nunca me has decepcionado. Temo la conducta de mis parientes a mi muerte, pues mi mujer es estéril. Regálame, pues, de Ti un descendiente, que me herede a mí y herede de la familia de Jacob, y ¡haz, Señor, que él Te sea agradable!»   ",
+                "chinses": "「我的主啊！我的骨骼已軟弱了，我已白髮蒼蒼了，我的主啊！我沒有為祈禱你而失望。 我的確擔心我死後堂兄弟們不能繼承我的職位，我的妻子又是不會生育的，求你賞賜我一個兒子， 來繼承我，並繼承葉爾孤白的部分後裔。我的主啊！求你使他成為可喜的。」      ",
+                "japanses": "かれは言った。「主よ，わたしの骨は本当に弱まり，また頭の髪は灰色に輝きます。だが主よ，わたしはあなたに御祈りして，御恵みを与えられないことはありません。 只々わたしの後の，近親（と同胞のこと）を恐れます。わたしの妻は不妊です。それであなたの御許から，相続者をわたしに御授け下さい。わたしを継がせ，またヤアコーブの家を継がせて下さい。主よ，かれを御意に適う者にして下さい。」",
+                "urdu": " کہ اے میرے پروردگار! میری ہڈیاں کمزور ہوگئی ہیں اور سر بڑھاپے کی وجہ سے بھڑک اٹھا ہے، لیکن میں کبھی بھی تجھ سے دعا کر کے محروم نہیں رہا  مجھے اپنے مرنے کے بعد اپنے قرابت والوں کا ڈر ہے، میری بیوی بھی بانجھ ہے پس تو مجھے اپنے پاس سے وارث عطا فرما  جو میرا بھی وارث ہو اور یعقوب (علیہ السلام) کے خاندان کا بھی جانشین اور میرے رب! تو اسے مقبول بنده بنا لے",
+                "turkish": "Söyle demisti: Ey Rabbim! Süphesiz (artik öyle bir durumdayim ki) benim kemigim zayiflayip gevsedi ve basim(in saçi) bembeyaz alev gibi tutustu. Sana dua etmekle de ey Rabbim, hiçbir zaman bedbaht olmadim. Gerçekten ben, arkamdan yerime geçecek varislerden endisedeyim. Karim da kisir bulunuyor. Onun için katindan bana bir çocuk ihsan et. Ki bana da mirasçi olsun, Yakub ailesine de mirasci olsun. Rabbim, onu sen rizana kavustur.",
+                "mp3_file_path": "zakria_3.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "name": "Zakariyya (AS)",
+                "arabic_name": "حضرت زکريا عليہ سلام",
+                "chapter_name": "Maryum",
+                "chapter_no": 19,
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Isa (AS)",
+        "arabic_name": "حضرت عيسئ عليہ سلام",
+        "dua": [
+          {
+            "chapter_name": "Al-Maeda",
+            "chapter_no": 5,
+            "aya": [
+              {
+                "index": 40,
+                "aya_no": "114",
+                "arabic": "قَالَ عِيسَى ابْنُ مَرْيَمَ اللَّهُمَّ رَبَّنَا أَنزِلْ عَلَيْنَا مَائِدَةً مِّنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِّأَوَّلِنَا وَآخِرِنَا وَآيَةً مِّنكَ ۖ وَارْزُقْنَا وَأَنتَ خَيْرُ الرَّازِقِينَ ",
+                "english": "Said  Jesus,  the  son  of  Mary,  O Allah ,  our  Lord,  send  down  to  us  a  table  [spread  with food]  from  the  heaven  to  be  for  us  a  festival  for  the  first  of  us  and  the  last  of  us  and  a sign  from  You.  And  provide  for  us,  and  You  are  the  best  of  providers.",
+                "spanish": "Dijo Jesús, hijo de María: «¡Alá, Señor nuestro! Haz que nos baje del cielo una mesa servida, que sea para nosotros, el primero como el último, motivo de regocijo y signo venido de Ti. ¡Provéenos del sustento necesario, Tú, Que eres el Mejor de los proveedores!».  ",
+                "chinses": "麥爾彥之子爾撒說：「真主啊！我們的主啊！求你從天上降筵席給我們，以便我們先輩和後輩都以降筵之日為節日，並以筵席為你所降示的蹟象。求你以給養賞賜我們，你是最善於供給的。」       ",
+                "japanses": "マルヤムの子イーサーは（祈って）言った。「アッラー，わたしたちの主よ，わたしたちのために，（食物を並べた）食卓を天から御下しになり，それでわたしたちへの最初の，また最後の機縁となされ，あなたからの印として下さい。わたしたちに食を与えて下さい。本当にあなたは最も優れた養い主です。」",
+                "urdu": " عیسیٰ ابن مریم نے دعا کی کہ اے اللہ اے ہمارے پروردگار! ہم پر آسمان سے کھانا نازل فرما! کہ وه ہمارے لئے یعنی ہم میں جو اول ہیں اور جو بعد کے ہیں سب کے لئے ایک خوشی کی بات ہوجائے اور تیری طرف سے ایک نشانی ہوجائے اور تو ہم کو رزق عطا فرمادے اور تو سب عطا کرنے والوں سے اچھا ہے",
+                "turkish": "Kulumuz Eyyub'Meryemoglu Isa da: Allah'im, Rabbimiz, bizim üzerimize gökten bir sofra indir ki, bizim için, önce ve sonra gelenlerimiz için bir bayram ve senden bir mucize olsun. Bizi riziklandir, sen rizik verenlerin en hayirlisisin! dedi.u da an. Bir zaman o, Rabbine söyle nida etmisti: Mesakkat ve aci ile bana seytan dokundu.",
+                "mp3_file_path": "jesus_1.mp3",
+                "bismial": "بسم الله الرحمن الرحيم",
+                "chapter_name": "Al-Maeda",
+                "chapter_no": 5,
+                "name": "Isa (AS)",
+                "arabic_name": "حضرت عيسئ عليہ سلام",
+                "favorite": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
