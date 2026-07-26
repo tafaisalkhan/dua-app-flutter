@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/settings_service.dart';
 import '../services/notification_service.dart';
+import 'ad_banner.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -18,189 +19,197 @@ class SettingsPage extends StatelessWidget {
         elevation: 0,
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'Theme',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF2C3E50),
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Choose between light and dark mode',
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Color(0xFF888888),
-                ),
-              ),
-              const SizedBox(height: 16),
-              ValueListenableBuilder<ThemeMode>(
-                valueListenable: SettingsService.themeMode,
-                builder: (context, mode, _) {
-                  return Row(
-                    children: [
-                      Expanded(
-                        child: _ThemeOption(
-                          icon: Icons.light_mode_rounded,
-                          label: 'Light',
-                          isSelected: mode == ThemeMode.light,
-                          onTap: () => SettingsService.themeMode.value = ThemeMode.light,
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: _ThemeOption(
-                          icon: Icons.dark_mode_rounded,
-                          label: 'Dark',
-                          isSelected: mode == ThemeMode.dark,
-                          onTap: () => SettingsService.themeMode.value = ThemeMode.dark,
-                        ),
-                      ),
-                    ],
-                  );
-                },
-              ),
-              const SizedBox(height: 32),
-              const Text(
-                'Translation Language',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF2C3E50),
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Select the language for dua translations',
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Color(0xFF888888),
-                ),
-              ),
-              const SizedBox(height: 16),
-              ValueListenableBuilder<String>(
-                valueListenable: SettingsService.selectedLanguage,
-                builder: (context, selected, _) {
-                  return ListView.separated(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    itemCount: SettingsService.availableLanguages.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 8),
-                    itemBuilder: (context, index) {
-                      final lang = SettingsService.availableLanguages[index];
-                      final isSelected = lang == selected;
-
-                      return Card(
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                          side: BorderSide(
-                            color: isSelected
-                                ? const Color(0xFF1F7A5A)
-                                : const Color(0xFFE8DED0),
-                            width: isSelected ? 2 : 1,
-                          ),
-                        ),
-                        child: ListTile(
-                          title: Text(
-                            SettingsService.languageNames[lang] ?? lang,
-                            style: TextStyle(
-                              fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-                              color: isSelected
-                                  ? const Color(0xFF1F7A5A)
-                                  : const Color(0xFF2C3E50),
-                            ),
-                          ),
-                          trailing: isSelected
-                              ? const Icon(
-                                  Icons.check_circle_rounded,
-                                  color: Color(0xFF1F7A5A),
-                                )
-                              : const Icon(
-                                  Icons.circle_outlined,
-                                  color: Color(0xFFCCCCCC),
-                                ),
-                          onTap: () {
-                            SettingsService.selectedLanguage.value = lang;
-                          },
-                        ),
-                      );
-                    },
-                  );
-                },
-              ),
-              const SizedBox(height: 32),
-              const Text(
-                'Notifications',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF2C3E50),
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Receive a daily reminder to open the app and read Duas',
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Color(0xFF888888),
-                ),
-              ),
-              const SizedBox(height: 16),
-              ValueListenableBuilder<bool>(
-                valueListenable: SettingsService.notificationsEnabled,
-                builder: (context, enabled, _) {
-                  return Card(
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                      side: const BorderSide(
-                        color: Color(0xFFE8DED0),
-                        width: 1,
+        child: Column(
+          children: [
+            const AdBanner(position: 'Top Ad'),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Theme',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF2C3E50),
                       ),
                     ),
-                    child: SwitchListTile(
-                      activeColor: const Color(0xFF1F7A5A),
-                      title: const Text(
-                        'Daily Reminder Notification',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xFF2C3E50),
-                        ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Choose between light and dark mode',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF888888),
                       ),
-                      value: enabled,
-                      onChanged: (bool value) async {
-                        SettingsService.notificationsEnabled.value = value;
-                        if (value) {
-                          final granted = await NotificationService.requestPermissions();
-                          if (granted) {
-                            await NotificationService.scheduleDailyDuaNotification();
-                          } else {
-                            SettingsService.notificationsEnabled.value = false;
-                            if (context.mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Notification permission is required for daily reminders.'),
-                                ),
-                              );
-                            }
-                          }
-                        } else {
-                          await NotificationService.cancelDailyReminders();
-                        }
+                    ),
+                    const SizedBox(height: 16),
+                    ValueListenableBuilder<ThemeMode>(
+                      valueListenable: SettingsService.themeMode,
+                      builder: (context, mode, _) {
+                        return Row(
+                          children: [
+                            Expanded(
+                              child: _ThemeOption(
+                                icon: Icons.light_mode_rounded,
+                                label: 'Light',
+                                isSelected: mode == ThemeMode.light,
+                                onTap: () => SettingsService.themeMode.value = ThemeMode.light,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: _ThemeOption(
+                                icon: Icons.dark_mode_rounded,
+                                label: 'Dark',
+                                isSelected: mode == ThemeMode.dark,
+                                onTap: () => SettingsService.themeMode.value = ThemeMode.dark,
+                              ),
+                            ),
+                          ],
+                        );
                       },
                     ),
-                  );
-                },
+                    const SizedBox(height: 32),
+                    const Text(
+                      'Translation Language',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF2C3E50),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Select the language for dua translations',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF888888),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    ValueListenableBuilder<String>(
+                      valueListenable: SettingsService.selectedLanguage,
+                      builder: (context, selected, _) {
+                        return ListView.separated(
+                          shrinkWrap: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemCount: SettingsService.availableLanguages.length,
+                          separatorBuilder: (_, __) => const SizedBox(height: 8),
+                          itemBuilder: (context, index) {
+                            final lang = SettingsService.availableLanguages[index];
+                            final isSelected = lang == selected;
+
+                            return Card(
+                              elevation: 0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                side: BorderSide(
+                                  color: isSelected
+                                      ? const Color(0xFF1F7A5A)
+                                      : const Color(0xFFE8DED0),
+                                  width: isSelected ? 2 : 1,
+                                ),
+                              ),
+                              child: ListTile(
+                                title: Text(
+                                  SettingsService.languageNames[lang] ?? lang,
+                                  style: TextStyle(
+                                    fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                                    color: isSelected
+                                        ? const Color(0xFF1F7A5A)
+                                        : const Color(0xFF2C3E50),
+                                  ),
+                                ),
+                                trailing: isSelected
+                                    ? const Icon(
+                                        Icons.check_circle_rounded,
+                                        color: Color(0xFF1F7A5A),
+                                      )
+                                    : const Icon(
+                                        Icons.circle_outlined,
+                                        color: Color(0xFFCCCCCC),
+                                      ),
+                                onTap: () {
+                                  SettingsService.selectedLanguage.value = lang;
+                                },
+                              ),
+                            );
+                          },
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 32),
+                    const Text(
+                      'Notifications',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF2C3E50),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Receive a daily reminder to open the app and read Duas',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF888888),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    ValueListenableBuilder<bool>(
+                      valueListenable: SettingsService.notificationsEnabled,
+                      builder: (context, enabled, _) {
+                        return Card(
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            side: const BorderSide(
+                              color: Color(0xFFE8DED0),
+                              width: 1,
+                            ),
+                          ),
+                          child: SwitchListTile(
+                            activeColor: const Color(0xFF1F7A5A),
+                            title: const Text(
+                              'Daily Reminder Notification',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF2C3E50),
+                              ),
+                            ),
+                            value: enabled,
+                            onChanged: (bool value) async {
+                              SettingsService.notificationsEnabled.value = value;
+                              if (value) {
+                                final granted = await NotificationService.requestPermissions();
+                                if (granted) {
+                                  await NotificationService.scheduleDailyDuaNotification();
+                                } else {
+                                  SettingsService.notificationsEnabled.value = false;
+                                  if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text('Notification permission is required for daily reminders.'),
+                                      ),
+                                    );
+                                  }
+                                }
+                              } else {
+                                await NotificationService.cancelDailyReminders();
+                              }
+                            },
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
-            ],
-          ),
+            ),
+            const AdBanner(position: 'Bottom Ad'),
+          ],
         ),
       ),
     );

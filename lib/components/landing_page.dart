@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'index_page.dart';
 import 'favorites_page.dart';
 import 'settings_page.dart';
+import 'ad_banner.dart';
 import '../services/notification_service.dart';
 import '../services/settings_service.dart';
 
@@ -159,74 +160,82 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 120,
-                height: 120,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(32),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0x33000000),
-                      blurRadius: 24,
-                      offset: Offset(0, 14),
+              const AdBanner(position: 'Top Ad'),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 120,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0x33000000),
+                            blurRadius: 24,
+                            offset: Offset(0, 14),
+                          ),
+                        ],
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Image.asset(
+                          'assets/icon/icon.png',
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 32),
+                    const Text(
+                      'Dua-ul-Anbiya',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 32,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Daily duas in one place',
+                      style: TextStyle(color: Color(0xFFEAF8F2), fontSize: 16),
+                    ),
+                    const SizedBox(height: 48),
+                    _MenuButton(
+                      icon: Icons.menu_book_rounded,
+                      label: 'Dua-ul-Anbiya',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const IndexPage()),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    _MenuButton(
+                      icon: Icons.favorite_rounded,
+                      label: 'Favorites',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const FavoritesPage()),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    _MenuButton(
+                      icon: Icons.settings_rounded,
+                      label: 'Settings',
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const SettingsPage()),
+                        );
+                      },
                     ),
                   ],
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Image.asset(
-                    'assets/icon/icon.png',
-                    fit: BoxFit.contain,
-                  ),
-                ),
               ),
-              const SizedBox(height: 32),
-              const Text(
-                'Dua-ul-Anbiya',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Daily duas in one place',
-                style: TextStyle(color: Color(0xFFEAF8F2), fontSize: 16),
-              ),
-              const SizedBox(height: 48),
-              _MenuButton(
-                icon: Icons.menu_book_rounded,
-                label: 'Dua-ul-Anbiya',
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const IndexPage()),
-                  );
-                },
-              ),
-              const SizedBox(height: 16),
-              _MenuButton(
-                icon: Icons.favorite_rounded,
-                label: 'Favorites',
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const FavoritesPage()),
-                  );
-                },
-              ),
-              const SizedBox(height: 16),
-              _MenuButton(
-                icon: Icons.settings_rounded,
-                label: 'Settings',
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const SettingsPage()),
-                  );
-                },
-              ),
+              const AdBanner(position: 'Bottom Ad'),
             ],
           ),
         ),

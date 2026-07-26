@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dua.dart';
 import 'ad_banner.dart';
 import 'prophet_duas_page.dart';
-import '../services/audio_service.dart';
 
 class IndexPage extends StatelessWidget {
   const IndexPage({super.key});
@@ -68,7 +67,7 @@ class DuaIndexList extends StatelessWidget {
                   child: Text('${index + 1}'),
                 ),
                 title: Text(
-                  prophet.name,
+                  '${prophet.name} (${prophet.allAyas.length})',
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
                 subtitle: Text(
