@@ -1,19 +1,29 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'components/splash_screen.dart';
 import 'services/settings_service.dart';
 import 'services/ad_service.dart';
+import 'services/service.dart';
 import 'services/notification_service.dart';
+import 'components/dua.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SettingsService.init();
-  await MobileAds.instance.initialize();
   await NotificationService.init();
   if (SettingsService.notificationsEnabled.value) {
     await NotificationService.scheduleDailyDuaNotification();
   }
-  AdService.loadInterstitialAd();
+  if (!kIsWeb) {
+    await MobileAds.instance.initialize();
+    AdService.loadInterstitialAd();
+  }
+  try {
+    prophets = await DuaService.fetchProphets();
+  } catch (e) {
+    debugPrint('Error preloading prophets: $e');
+  }
   runApp(const DuaApp());
 }
 

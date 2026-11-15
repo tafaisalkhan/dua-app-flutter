@@ -7,13 +7,14 @@ class AdService {
   static int _navigationCount = 0;
   static int _loadAttempts = 0;
 
-  static const String _prodInterstitialAdUnitId = 'ca-app-pub-1852108665659812/1039323888';
+  static const String _prodInterstitialAdUnitId = String.fromEnvironment('ADMOB_INTERSTITIAL_ID', defaultValue: 'ca-app-pub-3940256099942544/1033173712');
   static const String _testInterstitialAdUnitId = 'ca-app-pub-3940256099942544/1033173712';
 
   static String get interstitialAdUnitId => kDebugMode ? _testInterstitialAdUnitId : _prodInterstitialAdUnitId;
 
   /// Pre-loads the Interstitial Ad so it's ready when needed.
   static void loadInterstitialAd() {
+    if (kIsWeb) return;
     if (_isAdLoading || _interstitialAd != null) return;
     _isAdLoading = true;
 

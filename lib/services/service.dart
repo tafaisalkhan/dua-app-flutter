@@ -6,8 +6,6 @@ class DuaService {
   /// Fetches the list of Prophets (Anbiya) from the local JSON asset file.
   /// Handles both the old format (List) and the new format (Map) dynamically.
   static Future<List<Prophet>> fetchProphets() async {
-    // Simulate some network delay (e.g., 500ms) to make it feel like a real service call
-    await Future<void>.delayed(const Duration(milliseconds: 500));
     
     try {
       final String response = await rootBundle.loadString('assets/duas.json');

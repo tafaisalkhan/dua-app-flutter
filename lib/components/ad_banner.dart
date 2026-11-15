@@ -22,9 +22,10 @@ class _AdBannerState extends State<AdBanner> {
   }
 
   void _loadAd() {
+    if (kIsWeb) return;
     final adUnitId = widget.position == 'Top Ad'
-        ? (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : 'ca-app-pub-1852108665659812/4319757608')
-        : (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : 'ca-app-pub-1852108665659812/8243857062');
+        ? (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : 'ca-app-pub-3940256099942544/1033173712')
+        : (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : 'ca-app-pub-3940256099942544/1033173712');
 
     _bannerAd = BannerAd(
       adUnitId: adUnitId,

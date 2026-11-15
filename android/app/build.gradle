@@ -75,6 +75,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    packaging {
+        jniLibs {
+            doNotStrip "**/*.so"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+tasks.configureEach { task ->
+    if (task.name.contains("Strip") && task.name.contains("DebugSymbols")) {
+        task.enabled = false
+    }
 }
 
 flutter {

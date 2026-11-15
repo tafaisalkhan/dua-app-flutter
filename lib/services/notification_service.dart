@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
@@ -8,41 +9,71 @@ class NotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
+  /// Inspirational dua reminder messages to rotate daily
+  static const List<String> _morningMessages = [
+    'Start your day with blessings. Open the app and read your morning Duas.',
+    'Begin your morning with the beautiful supplications of the Prophets (AS).',
+    'A new day, a new blessing. Read a Dua and seek Allah\'s guidance.',
+    'The Prophets started every day with remembrance. Follow their path today.',
+    'Bismillah! Let the words of the Prophets guide your morning.',
+    'Wake up with gratitude. Read a Dua from the Holy Quran today.',
+    'Every morning is a gift. Start it with a prophetic supplication.',
+  ];
+
+  static const List<String> _eveningMessages = [
+    'End your day with peace and gratitude. Read your evening Duas.',
+    'Reflect on your blessings today. Read a Dua before you rest.',
+    'The Prophets never forgot to supplicate in the evening. Neither should you.',
+    'As the sun sets, turn to Allah with the Duas of the Prophets (AS).',
+    'Close your day beautifully — read a supplication from the Quran.',
+    'Evening time is the best time for reflection. Open the app and read Duas.',
+    'Alhamdulillah for this day. End it with a prophetic Dua.',
+  ];
+
   /// Initializes the local notification plugin and sets up timezone configurations.
   static Future<void> init() async {
     try {
-      tz.initializeTimeZones();
-      try {
-        final dynamic tzInfo = await FlutterTimezone.getLocalTimezone();
-        final String timeZoneName = tzInfo is String ? tzInfo : tzInfo.identifier;
-        tz.setLocalLocation(tz.getLocation(timeZoneName));
-      } catch (e) {
-        // Fallback to UTC if device timezone detection fails or in test environment.
-        tz.setLocalLocation(tz.UTC);
-        debugPrint('Could not get local timezone, falling back to UTC: $e');
+      if (!kIsWeb) {
+        tz.initializeTimeZones();
+        try {
+          final dynamic tzInfo = await FlutterTimezone.getLocalTimezone();
+          final String timeZoneName = tzInfo is String ? tzInfo : tzInfo.identifier;
+          tz.setLocalLocation(tz.getLocation(timeZoneName));
+        } catch (e) {
+          tz.setLocalLocation(tz.UTC);
+          debugPrint('Could not get local timezone, falling back to UTC: $e');
+        }
+
+        const AndroidInitializationSettings initializationSettingsAndroid =
+            AndroidInitializationSettings('@mipmap/ic_launcher');
+
+        const DarwinInitializationSettings initializationSettingsDarwin =
+            DarwinInitializationSettings(
+          requestAlertPermission: false,
+          requestBadgePermission: false,
+          requestSoundPermission: false,
+        );
+
+        const InitializationSettings initializationSettings = InitializationSettings(
+          android: initializationSettingsAndroid,
+          iOS: initializationSettingsDarwin,
+        );
+
+        await _notificationsPlugin.initialize(
+          settings: initializationSettings,
+          onDidReceiveNotificationResponse: _onNotificationTap,
+        );
       }
-
-      const AndroidInitializationSettings initializationSettingsAndroid =
-          AndroidInitializationSettings('@mipmap/ic_launcher');
-
-      const DarwinInitializationSettings initializationSettingsDarwin =
-          DarwinInitializationSettings(
-        requestAlertPermission: false,
-        requestBadgePermission: false,
-        requestSoundPermission: false,
-      );
-
-      const InitializationSettings initializationSettings = InitializationSettings(
-        android: initializationSettingsAndroid,
-        iOS: initializationSettingsDarwin,
-      );
-
-      await _notificationsPlugin.initialize(
-        settings: initializationSettings,
-      );
     } catch (e) {
       debugPrint('NotificationService init error: $e');
     }
+  }
+
+  /// Called when the user taps on a notification.
+  static void _onNotificationTap(NotificationResponse response) {
+    debugPrint('Notification tapped: ${response.payload}');
+    // The app will be brought to the foreground automatically.
+    // If you need deep-link navigation in the future, handle it here.
   }
 
   /// Request permissions for local notifications (specifically for Android 13+ and iOS).
@@ -73,21 +104,28 @@ class NotificationService {
     return false;
   }
 
-  /// Cancels scheduled notifications.
+  /// Cancels all scheduled daily reminder notifications.
   static Future<void> cancelDailyReminders() async {
+    if (kIsWeb) return;
     try {
-      await _notificationsPlugin.cancel(id: 0);
-      await _notificationsPlugin.cancel(id: 1);
+      await _notificationsPlugin.cancel(id: 0); // Morning reminder
+      await _notificationsPlugin.cancel(id: 1); // Evening reminder
     } catch (e) {
       debugPrint('NotificationService cancel error: $e');
     }
   }
 
-  /// Schedules two daily notifications: one in the morning (9:00 AM) and one in the evening (6:00 PM).
+  /// Schedules two daily notifications:
+  /// - Morning Dua Reminder at 9:00 AM
+  /// - Evening Dua Reminder at 6:00 PM
+  /// Both repeat every day and show rotating inspirational messages.
   static Future<void> scheduleDailyDuaNotification() async {
+    if (kIsWeb) return;
     try {
-      // Cancel existing scheduled notifications first to prevent multiple notifications
+      // Cancel existing scheduled notifications first to prevent duplicates
       await cancelDailyReminders();
+
+      final random = Random();
 
       const AndroidNotificationDetails androidDetails = AndroidNotificationDetails(
         'daily_dua_reminder',
@@ -95,6 +133,8 @@ class NotificationService {
         channelDescription: 'Reminder to open the app and read daily Duas',
         importance: Importance.max,
         priority: Priority.high,
+        icon: '@mipmap/ic_launcher',
+        styleInformation: BigTextStyleInformation(''),
       );
 
       const DarwinNotificationDetails iosDetails = DarwinNotificationDetails(
@@ -108,32 +148,44 @@ class NotificationService {
         iOS: iosDetails,
       );
 
-      // 1. Morning Notification at 9:00 AM
+      // Pick a random message for variety
+      final morningBody = _morningMessages[random.nextInt(_morningMessages.length)];
+      final eveningBody = _eveningMessages[random.nextInt(_eveningMessages.length)];
+
+      // 1. Morning Notification at 7:00 AM
       await _notificationsPlugin.zonedSchedule(
         id: 0,
         title: 'Morning Dua Reminder 🕌',
-        body: 'Start your day with blessings. Open the app and read your morning Duas.',
-        scheduledDate: _nextInstanceOfTime(9, 0),
+        body: morningBody,
+        scheduledDate: _nextInstanceOfTime(7, 0),
         notificationDetails: notificationDetails,
-        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time,
+        payload: 'morning_dua',
       );
+
+      debugPrint('Morning notification scheduled for ${_nextInstanceOfTime(7, 0)}');
 
       // 2. Evening Notification at 6:00 PM (18:00)
       await _notificationsPlugin.zonedSchedule(
         id: 1,
         title: 'Evening Dua Reminder 🕌',
-        body: 'End your day with peace and gratitude. Open the app and read your evening Duas.',
+        body: eveningBody,
         scheduledDate: _nextInstanceOfTime(18, 0),
         notificationDetails: notificationDetails,
-        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time,
+        payload: 'evening_dua',
       );
+
+      debugPrint('Evening notification scheduled for ${_nextInstanceOfTime(18, 0)}');
     } catch (e) {
       debugPrint('NotificationService schedule error: $e');
     }
   }
 
+  /// Computes the next occurrence of the given hour:minute in the local timezone.
+  /// If the time has already passed today, it returns tomorrow's instance.
   static tz.TZDateTime _nextInstanceOfTime(int hour, int minute) {
     final tz.TZDateTime now = tz.TZDateTime.now(tz.local);
     tz.TZDateTime scheduledDate =
@@ -146,6 +198,7 @@ class NotificationService {
 
   /// Triggers an immediate test notification to verify that configuration and permissions are working correctly.
   static Future<void> showImmediateTestNotification() async {
+    if (kIsWeb) return;
     try {
       const AndroidNotificationDetails androidDetails = AndroidNotificationDetails(
         'test_dua_reminder',
@@ -153,6 +206,7 @@ class NotificationService {
         channelDescription: 'Used for testing/verifying app notifications',
         importance: Importance.max,
         priority: Priority.high,
+        icon: '@mipmap/ic_launcher',
       );
 
       const DarwinNotificationDetails iosDetails = DarwinNotificationDetails(
@@ -171,6 +225,7 @@ class NotificationService {
         title: 'Test Notification 🕌',
         body: 'Alhamdulillah! If you see this, notifications are configured and working correctly.',
         notificationDetails: notificationDetails,
+        payload: 'test',
       );
     } catch (e) {
       debugPrint('NotificationService showImmediateTestNotification error: $e');

@@ -1,0 +1,3 @@
+This folder contains the required Flutter project source and configuration for backup.
+Excluded: .git, .dart_tool, build, Android Gradle/Kotlin/CMake caches, .DS_Store, generated plugin metadata, and IDE files.
+After restoring: run `flutter pub get` before building.
