@@ -272,7 +272,7 @@ class SettingsPage extends StatelessWidget {
                               color: Color(0xFF6F4E37),
                             ),
                             title: const Text(
-                              'Buy Developer a Coffee (\$0.99)',
+                              'Buy Developer a Coffee (\$1.99)',
                               style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 color: Color(0xFF2C3E50),

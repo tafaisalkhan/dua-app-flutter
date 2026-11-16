@@ -52,8 +52,8 @@ class NoAdsPopup extends StatelessWidget {
           ? '$streakDays-Day Streak: No Ads Today!'
           : 'No Ads Today!';
       body =
-          'Enjoy an ad-free experience today! Support the developer with a \$0.99 coffee to help keep the app growing.';
-      primaryLabel = 'Buy Developer a Coffee (\$0.99)';
+          'Enjoy an ad-free experience today! Support the developer with a \$1.99 coffee to help keep the app growing.';
+      primaryLabel = 'Buy Developer a Coffee (\$1.99)';
       primaryIcon = Icons.local_cafe_rounded;
     }
 
