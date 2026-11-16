@@ -109,7 +109,7 @@ class AdService {
   }
 
   static Future<void> showNoAdsPopupIfNeeded(BuildContext context) async {
-    if (_adsRemoved || !isAdFreeToday || _popupShownThisLaunch || _dialogCurrentlyVisible) return;
+    if (!isAdFreeToday || _popupShownThisLaunch || _dialogCurrentlyVisible) return;
     if (ModalRoute.of(context)?.isCurrent != true) return;
 
     final prefs = await SharedPreferences.getInstance();
