@@ -33,7 +33,7 @@ class NoAdsPopup extends StatelessWidget {
     final resolvedTitle = isAdFreePurchased
         ? 'Thank You for Your Support!'
         : (isStreakReward
-            ? '$streakDays-Day Streak: No Ads Today!'
+            ? '3-Day Streak Reward: No Ads Today!'
             : 'No Ads Today!');
     final prefix = isAdFreePurchased ? '' : 'Enjoy an ad-free experience today! ';
     if (actionIndex == 0) {

@@ -80,15 +80,19 @@ class AdService {
       } else {
         _streakDays = 1;
       }
+      if (_streakDays >= streakRewardDays) {
+        _isStreakRewardToday = true;
+        _adFreeDate = today;
+        _streakDays = 0;
+        await prefs.setString(_prefAdFreeDate, today);
+      }
       await prefs.setString(_prefLastOpenDate, today);
       await prefs.setInt(_prefStreakDays, _streakDays);
+    } else if (_adFreeDate == today && _streakDays == 0) {
+      _isStreakRewardToday = true;
     }
 
-    if (_streakDays >= streakRewardDays) {
-      _isStreakRewardToday = true;
-      _adFreeDate = today;
-      await prefs.setString(_prefAdFreeDate, today);
-    } else if (adsPausedForSuspension) {
+    if (adsPausedForSuspension) {
       _adFreeDate = today;
       await prefs.setString(_prefAdFreeDate, today);
     }
