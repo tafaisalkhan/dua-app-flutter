@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../services/settings_service.dart';
 import '../services/notification_service.dart';
 import '../services/support_service.dart';
+import '../services/ad_service.dart';
 import 'ad_banner.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -247,7 +248,7 @@ class SettingsPage extends StatelessWidget {
                               ),
                             ),
                             trailing: const Icon(Icons.chevron_right_rounded),
-                            onTap: SupportService.rateApp,
+                            onTap: () => SupportService.rateApp(context),
                           ),
                           const Divider(height: 1, color: Color(0xFFE8DED0)),
                           ListTile(
@@ -280,6 +281,53 @@ class SettingsPage extends StatelessWidget {
                             ),
                             trailing: const Icon(Icons.chevron_right_rounded),
                             onTap: () => SupportService.buyCoffee(context),
+                          ),
+                          const Divider(height: 1, color: Color(0xFFE8DED0)),
+                          ValueListenableBuilder<bool>(
+                            valueListenable: AdService.adFreeTodayNotifier,
+                            builder: (context, _, __) {
+                              final removed = AdService.isAdsRemoved;
+                              return ListTile(
+                                leading: Icon(
+                                  removed
+                                      ? Icons.verified_rounded
+                                      : Icons.block_rounded,
+                                  color: const Color(0xFF1F7A5A),
+                                ),
+                                title: Text(
+                                  removed ? 'Ads Removed' : 'Remove Ads (\$4.99)',
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xFF2C3E50),
+                                  ),
+                                ),
+                                trailing: removed
+                                    ? const Icon(
+                                        Icons.check_circle_rounded,
+                                        color: Color(0xFF1F7A5A),
+                                      )
+                                    : const Icon(Icons.chevron_right_rounded),
+                                onTap: removed
+                                    ? null
+                                    : () => SupportService.buyRemoveAds(context),
+                              );
+                            },
+                          ),
+                          const Divider(height: 1, color: Color(0xFFE8DED0)),
+                          ListTile(
+                            leading: const Icon(
+                              Icons.restore_rounded,
+                              color: Color(0xFF888888),
+                            ),
+                            title: const Text(
+                              'Restore Purchases',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF2C3E50),
+                              ),
+                            ),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: () => SupportService.restorePurchases(context),
                           ),
                         ],
                       ),

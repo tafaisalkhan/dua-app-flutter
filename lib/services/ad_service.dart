@@ -19,6 +19,7 @@ class AdService {
   static const String _prefStreakDays = 'ad_streak_days';
   static const String _prefAdFreeDate = 'ad_free_date';
   static const String _prefPopupStep = 'no_ads_popup_step';
+  static const String _prefAdsRemoved = 'ads_removed_permanently';
 
   static String _adFreeDate = '';
   static int _popupStep = 0;
@@ -26,6 +27,7 @@ class AdService {
   static bool _isStreakRewardToday = false;
   static bool _dialogCurrentlyVisible = false;
   static bool _popupShownThisLaunch = false;
+  static bool _adsRemoved = false;
 
   static final ValueNotifier<bool> adFreeTodayNotifier = ValueNotifier<bool>(false);
 
@@ -48,8 +50,17 @@ class AdService {
 
   static String _todayKey() => _dateKey(DateTime.now());
 
+  static bool get isAdsRemoved => _adsRemoved;
+
   static bool get isAdFreeToday =>
-      adsPausedForSuspension || _adFreeDate == _todayKey();
+      _adsRemoved || adsPausedForSuspension || _adFreeDate == _todayKey();
+
+  static Future<void> setAdsRemoved(bool value) async {
+    _adsRemoved = value;
+    adFreeTodayNotifier.value = isAdFreeToday;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_prefAdsRemoved, value);
+  }
 
   static int get streakDays => _streakDays;
 
@@ -59,6 +70,7 @@ class AdService {
     final yesterday = _dateKey(DateTime.now().subtract(const Duration(days: 1)));
 
     final lastOpen = prefs.getString(_prefLastOpenDate) ?? '';
+    _adsRemoved = prefs.getBool(_prefAdsRemoved) ?? false;
     _streakDays = prefs.getInt(_prefStreakDays) ?? 0;
     _adFreeDate = prefs.getString(_prefAdFreeDate) ?? '';
     _popupStep = prefs.getInt(_prefPopupStep) ?? 0;
@@ -97,7 +109,7 @@ class AdService {
   }
 
   static Future<void> showNoAdsPopupIfNeeded(BuildContext context) async {
-    if (!isAdFreeToday || _popupShownThisLaunch || _dialogCurrentlyVisible) return;
+    if (_adsRemoved || !isAdFreeToday || _popupShownThisLaunch || _dialogCurrentlyVisible) return;
     if (ModalRoute.of(context)?.isCurrent != true) return;
 
     final prefs = await SharedPreferences.getInstance();

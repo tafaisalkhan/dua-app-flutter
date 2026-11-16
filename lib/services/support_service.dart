@@ -6,12 +6,14 @@ import 'package:in_app_review/in_app_review.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'ad_service.dart';
 
-/// Handles Rate App, Share App, and $0.99 Buy Developer a Coffee IAP.
+/// Handles Rate App, Share App, Remove Ads ($4.99), and Coffee ($1.99) IAP.
 class SupportService {
   SupportService._();
 
   static const String coffeeProductId = 'cofee';
+  static const String removeAdsProductId = 'remove_ads';
   static const String packageId = 'com.nextlevel.duaulanbiya';
   static const String playStoreUrl =
       'https://play.google.com/store/apps/details?id=$packageId';
@@ -41,9 +43,12 @@ class SupportService {
     for (final purchase in purchases) {
       if (purchase.status == PurchaseStatus.purchased ||
           purchase.status == PurchaseStatus.restored) {
-        debugPrint('Coffee purchase completed: ${purchase.productID}');
+        if (purchase.productID == removeAdsProductId) {
+          await AdService.setAdsRemoved(true);
+        }
+        debugPrint('Purchase completed: ${purchase.productID}');
       } else if (purchase.status == PurchaseStatus.error) {
-        debugPrint('Coffee purchase error: ${purchase.error?.message}');
+        debugPrint('Purchase error: ${purchase.error?.message}');
       }
       if (purchase.pendingCompletePurchase) {
         await InAppPurchase.instance.completePurchase(purchase);
@@ -51,21 +56,94 @@ class SupportService {
     }
   }
 
-  static Future<void> rateApp() async {
-    if (!kIsWeb) {
-      final inAppReview = InAppReview.instance;
-      if (await inAppReview.isAvailable()) {
-        await inAppReview.requestReview();
-        return;
-      }
-    }
-    final marketUri = Uri.parse('market://details?id=$packageId');
-    final webUri = Uri.parse(playStoreUrl);
-    if (await canLaunchUrl(marketUri)) {
-      await launchUrl(marketUri, mode: LaunchMode.externalApplication);
-    } else {
-      await launchUrl(webUri, mode: LaunchMode.externalApplication);
-    }
+  static Future<void> rateApp(BuildContext context) async {
+    if (!context.mounted) return;
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    int selectedStars = 5;
+
+    await showDialog<void>(
+      context: context,
+      builder: (dialogCtx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          title: const Text(
+            'Rate Dua-ul-Anbiya',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF2C3E50),
+            ),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                'How would you rate your experience?',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Color(0xFF555555)),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(5, (i) {
+                  final star = i + 1;
+                  return IconButton(
+                    onPressed: () => setDialogState(() => selectedStars = star),
+                    icon: Icon(
+                      star <= selectedStars
+                          ? Icons.star_rounded
+                          : Icons.star_border_rounded,
+                      color: const Color(0xFFC68B2C),
+                      size: 34,
+                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 2),
+                    constraints: const BoxConstraints(),
+                  );
+                }),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(dialogCtx).pop(),
+              child: const Text(
+                'Later',
+                style: TextStyle(color: Color(0xFF888888)),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                Navigator.of(dialogCtx).pop();
+                messenger?.showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      'Thank you for rating us $selectedStars star${selectedStars == 1 ? '' : 's'}!',
+                    ),
+                  ),
+                );
+                if (!kIsWeb && selectedStars >= 4) {
+                  try {
+                    final inAppReview = InAppReview.instance;
+                    if (await inAppReview.isAvailable()) {
+                      await inAppReview.requestReview();
+                    }
+                  } catch (e) {
+                    debugPrint('InAppReview error: $e');
+                  }
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF1F7A5A),
+                foregroundColor: Colors.white,
+              ),
+              child: const Text('Submit'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   static Future<void> shareApp() async {
@@ -74,7 +152,11 @@ class SupportService {
     );
   }
 
-  static Future<void> buyCoffee(BuildContext context) async {
+  static Future<void> _purchaseProduct(
+    BuildContext context, {
+    required String productId,
+    required bool consumable,
+  }) async {
     if (kIsWeb) return;
     init();
     final available = await InAppPurchase.instance.isAvailable();
@@ -90,13 +172,13 @@ class SupportService {
     }
 
     final response =
-        await InAppPurchase.instance.queryProductDetails({coffeeProductId});
+        await InAppPurchase.instance.queryProductDetails({productId});
     if (response.productDetails.isEmpty) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
+          SnackBar(
             content: Text(
-              'Coffee support ($coffeeProductId) is not configured in Play Console yet.',
+              'Product ($productId) is not configured in Play Console yet.',
             ),
           ),
         );
@@ -105,7 +187,38 @@ class SupportService {
     }
 
     final param = PurchaseParam(productDetails: response.productDetails.first);
-    await InAppPurchase.instance.buyConsumable(purchaseParam: param);
+    if (consumable) {
+      await InAppPurchase.instance.buyConsumable(purchaseParam: param);
+    } else {
+      await InAppPurchase.instance.buyNonConsumable(purchaseParam: param);
+    }
+  }
+
+  static Future<void> buyCoffee(BuildContext context) async {
+    await _purchaseProduct(
+      context,
+      productId: coffeeProductId,
+      consumable: true,
+    );
+  }
+
+  static Future<void> buyRemoveAds(BuildContext context) async {
+    await _purchaseProduct(
+      context,
+      productId: removeAdsProductId,
+      consumable: false,
+    );
+  }
+
+  static Future<void> restorePurchases(BuildContext context) async {
+    if (kIsWeb) return;
+    init();
+    await InAppPurchase.instance.restorePurchases();
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Checking previous purchases...')),
+      );
+    }
   }
 
   static Future<void> checkForAppUpdate(BuildContext context) async {

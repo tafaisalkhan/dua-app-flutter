@@ -107,7 +107,7 @@ class NoAdsPopup extends StatelessWidget {
                       Navigator.of(context, rootNavigator: true).context;
                   Navigator.of(context).pop();
                   if (actionIndex == 0) {
-                    await SupportService.rateApp();
+                    await SupportService.rateApp(rootContext);
                   } else if (actionIndex == 1) {
                     await SupportService.shareApp();
                   } else {
