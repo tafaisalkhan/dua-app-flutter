@@ -24,6 +24,7 @@ class AdService {
   static int _popupStep = 0;
   static int _streakDays = 1;
   static bool _isStreakRewardToday = false;
+  static bool _noFillThisLaunch = false;
   static bool _dialogCurrentlyVisible = false;
   static bool _popupShownThisLaunch = false;
   static bool _adsRemoved = false;
@@ -102,17 +103,15 @@ class AdService {
 
   static Future<void> markNoFillTodayAndNotify(String adUnitId) async {
     if (!isValidAdUnitId(adUnitId)) return;
-    final today = _todayKey();
-    if (_adFreeDate != today) {
-      _adFreeDate = today;
-      adFreeTodayNotifier.value = true;
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_prefAdFreeDate, today);
-    }
+    _noFillThisLaunch = true;
   }
 
   static Future<void> showNoAdsPopupIfNeeded(BuildContext context) async {
-    if (!isAdFreeToday || _popupShownThisLaunch || _dialogCurrentlyVisible) return;
+    if ((!isAdFreeToday && !_noFillThisLaunch) ||
+        _popupShownThisLaunch ||
+        _dialogCurrentlyVisible) {
+      return;
+    }
     if (ModalRoute.of(context)?.isCurrent != true) return;
 
     final prefs = await SharedPreferences.getInstance();

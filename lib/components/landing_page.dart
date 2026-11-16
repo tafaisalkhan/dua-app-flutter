@@ -31,7 +31,7 @@ class _LandingPageState extends State<LandingPage> {
     await Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => page),
     );
-    if (mounted && AdService.isAdFreeToday) {
+    if (mounted) {
       await AdService.showNoAdsPopupIfNeeded(context);
     }
   }
