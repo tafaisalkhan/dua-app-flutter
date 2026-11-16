@@ -12,11 +12,13 @@ class NoAdsPopup extends StatelessWidget {
     required this.step,
     required this.isStreakReward,
     required this.streakDays,
+    this.isAdFreePurchased = false,
   });
 
   final int step;
   final bool isStreakReward;
   final int streakDays;
+  final bool isAdFreePurchased;
 
   @override
   Widget build(BuildContext context) {
@@ -28,31 +30,29 @@ class NoAdsPopup extends StatelessWidget {
     late final String primaryLabel;
     late final IconData primaryIcon;
 
+    final resolvedTitle = isAdFreePurchased
+        ? 'Thank You for Your Support!'
+        : (isStreakReward
+            ? '$streakDays-Day Streak: No Ads Today!'
+            : 'No Ads Today!');
+    final prefix = isAdFreePurchased ? '' : 'Enjoy an ad-free experience today! ';
     if (actionIndex == 0) {
       headerIcon = Icons.star_rounded;
-      title = isStreakReward
-          ? '$streakDays-Day Streak: No Ads Today!'
-          : 'No Ads Today!';
-      body =
-          'Enjoy an ad-free experience today! If you love the app, please rate us on the Play Store.';
+      title = resolvedTitle;
+      body = '${prefix}If you love the app, please rate us on the Play Store.';
       primaryLabel = 'Rate App';
       primaryIcon = Icons.star_rounded;
     } else if (actionIndex == 1) {
       headerIcon = Icons.share_rounded;
-      title = isStreakReward
-          ? '$streakDays-Day Streak: No Ads Today!'
-          : 'No Ads Today!';
-      body =
-          'Enjoy an ad-free experience today! Please share this app with your friends and family.';
+      title = resolvedTitle;
+      body = '${prefix}Please share this app with your friends and family.';
       primaryLabel = 'Share With Friends';
       primaryIcon = Icons.share_rounded;
     } else {
       headerIcon = Icons.local_cafe_rounded;
-      title = isStreakReward
-          ? '$streakDays-Day Streak: No Ads Today!'
-          : 'No Ads Today!';
+      title = resolvedTitle;
       body =
-          'Enjoy an ad-free experience today! Support the developer with a \$1.99 coffee to help keep the app growing.';
+          '${prefix}Support the developer with a \$1.99 coffee to help keep the app growing.';
       primaryLabel = 'Buy Developer a Coffee (\$1.99)';
       primaryIcon = Icons.local_cafe_rounded;
     }
@@ -132,9 +132,9 @@ class NoAdsPopup extends StatelessWidget {
             const SizedBox(height: 8),
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text(
-                'Enjoy Ad-Free',
-                style: TextStyle(
+              child: Text(
+                isAdFreePurchased ? 'Close' : 'Enjoy Ad-Free',
+                style: const TextStyle(
                   color: Color(0xFF888888),
                   fontWeight: FontWeight.w600,
                 ),

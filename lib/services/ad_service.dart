@@ -126,6 +126,7 @@ class AdService {
         step: currentStep,
         isStreakReward: _isStreakRewardToday,
         streakDays: _streakDays,
+        isAdFreePurchased: _adsRemoved,
       ),
     );
     _dialogCurrentlyVisible = false;
