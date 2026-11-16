@@ -4,20 +4,27 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'components/splash_screen.dart';
 import 'services/settings_service.dart';
 import 'services/ad_service.dart';
+import 'services/support_service.dart';
 import 'services/service.dart';
 import 'services/notification_service.dart';
 import 'components/dua.dart';
 
+final GlobalKey<NavigatorState> appNavigatorKey = GlobalKey<NavigatorState>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SettingsService.init();
+  await AdService.initDailyState();
+  SupportService.init();
   await NotificationService.init();
   if (SettingsService.notificationsEnabled.value) {
     await NotificationService.scheduleDailyDuaNotification();
   }
   if (!kIsWeb) {
     await MobileAds.instance.initialize();
-    AdService.loadInterstitialAd();
+    if (!AdService.isAdFreeToday) {
+      AdService.loadInterstitialAd();
+    }
   }
   try {
     prophets = await DuaService.fetchProphets();
@@ -36,6 +43,7 @@ class DuaApp extends StatelessWidget {
       valueListenable: SettingsService.themeMode,
       builder: (context, mode, _) {
         return MaterialApp(
+          navigatorKey: appNavigatorKey,
           title: 'Dua App',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(

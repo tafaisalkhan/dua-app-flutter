@@ -5,6 +5,8 @@ import 'settings_page.dart';
 import 'ad_banner.dart';
 import '../services/notification_service.dart';
 import '../services/settings_service.dart';
+import '../services/ad_service.dart';
+import '../services/support_service.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -17,9 +19,21 @@ class _LandingPageState extends State<LandingPage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _checkNotificationPermissionOnStartup();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await _checkNotificationPermissionOnStartup();
+      if (mounted) {
+        await SupportService.checkForAppUpdate(context);
+      }
     });
+  }
+
+  Future<void> _openMenuRoute(Widget page) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => page),
+    );
+    if (mounted && AdService.isAdFreeToday) {
+      await AdService.showNoAdsPopupIfNeeded(context);
+    }
   }
 
   Future<void> _checkNotificationPermissionOnStartup() async {
@@ -206,31 +220,19 @@ class _LandingPageState extends State<LandingPage> {
                     _MenuButton(
                       icon: Icons.menu_book_rounded,
                       label: 'Dua-ul-Anbiya',
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const IndexPage()),
-                        );
-                      },
+                      onTap: () => _openMenuRoute(const IndexPage()),
                     ),
                     const SizedBox(height: 16),
                     _MenuButton(
                       icon: Icons.favorite_rounded,
                       label: 'Favorites',
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const FavoritesPage()),
-                        );
-                      },
+                      onTap: () => _openMenuRoute(const FavoritesPage()),
                     ),
                     const SizedBox(height: 16),
                     _MenuButton(
                       icon: Icons.settings_rounded,
                       label: 'Settings',
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const SettingsPage()),
-                        );
-                      },
+                      onTap: () => _openMenuRoute(const SettingsPage()),
                     ),
                   ],
                 ),

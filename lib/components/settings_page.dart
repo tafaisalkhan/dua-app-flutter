@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/settings_service.dart';
 import '../services/notification_service.dart';
+import '../services/support_service.dart';
 import 'ad_banner.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -203,6 +204,85 @@ class SettingsPage extends StatelessWidget {
                           ),
                         );
                       },
+                    ),
+                    const SizedBox(height: 32),
+                    const Text(
+                      'Support & Feedback',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF2C3E50),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Help us keep this app growing and free for everyone',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF888888),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Card(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        side: const BorderSide(
+                          color: Color(0xFFE8DED0),
+                          width: 1,
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          ListTile(
+                            leading: const Icon(
+                              Icons.star_rounded,
+                              color: Color(0xFFC68B2C),
+                            ),
+                            title: const Text(
+                              'Rate App',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF2C3E50),
+                              ),
+                            ),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: SupportService.rateApp,
+                          ),
+                          const Divider(height: 1, color: Color(0xFFE8DED0)),
+                          ListTile(
+                            leading: const Icon(
+                              Icons.share_rounded,
+                              color: Color(0xFF1F7A5A),
+                            ),
+                            title: const Text(
+                              'Share With Friends',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xFF2C3E50),
+                              ),
+                            ),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: SupportService.shareApp,
+                          ),
+                          const Divider(height: 1, color: Color(0xFFE8DED0)),
+                          ListTile(
+                            leading: const Icon(
+                              Icons.local_cafe_rounded,
+                              color: Color(0xFF6F4E37),
+                            ),
+                            title: const Text(
+                              'Buy Developer a Coffee (\$0.99)',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xFF2C3E50),
+                              ),
+                            ),
+                            trailing: const Icon(Icons.chevron_right_rounded),
+                            onTap: () => SupportService.buyCoffee(context),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
