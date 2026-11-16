@@ -44,9 +44,7 @@ class _AdBannerState extends State<AdBanner> {
         onAdFailedToLoad: (ad, err) {
           debugPrint('Ad failed to load (${widget.position}): ${err.message} (code: ${err.code})');
           ad.dispose();
-          if (err.code == 3) {
-            AdService.markNoFillTodayAndNotify(adUnitId);
-          }
+          AdService.markNoFillTodayAndNotify(adUnitId);
         },
       ),
     )..load();

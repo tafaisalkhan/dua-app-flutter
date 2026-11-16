@@ -8,7 +8,6 @@ class AdService {
   static InterstitialAd? _interstitialAd;
   static bool _isAdLoading = false;
   static int _navigationCount = 0;
-  static int _loadAttempts = 0;
 
   /// Set to true if you want to pause all AdMob requests client-side during suspension.
   /// Even when false, NO_FILL (code 3) on valid AdMob IDs automatically triggers No-Ads-Today.
@@ -145,7 +144,6 @@ class AdService {
         onAdLoaded: (ad) {
           _interstitialAd = ad;
           _isAdLoading = false;
-          _loadAttempts = 0;
           debugPrint('InterstitialAd loaded successfully.');
 
           _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
@@ -166,21 +164,9 @@ class AdService {
         onAdFailedToLoad: (error) {
           _isAdLoading = false;
           _interstitialAd = null;
-          _loadAttempts++;
           debugPrint('Failed to load InterstitialAd: ${error.message} (code: ${error.code})');
 
-          if (error.code == 3) {
-            markNoFillTodayAndNotify(interstitialAdUnitId);
-            return;
-          }
-
-          if (_loadAttempts <= 4 && !isAdFreeToday) {
-            final delaySeconds = _loadAttempts * 5;
-            debugPrint('Retrying to load InterstitialAd in $delaySeconds seconds...');
-            Future.delayed(Duration(seconds: delaySeconds), () {
-              loadInterstitialAd();
-            });
-          }
+          markNoFillTodayAndNotify(interstitialAdUnitId);
         },
       ),
     );
