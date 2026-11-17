@@ -40,6 +40,7 @@ class _AdBannerState extends State<AdBanner> {
       listener: BannerAdListener(
         onAdLoaded: (ad) {
           debugPrint('Ad loaded: ${widget.position}');
+          AdService.markAdLoadedForStreak();
           if (mounted) {
             setState(() => _isLoaded = true);
           }
