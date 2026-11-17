@@ -23,6 +23,18 @@ if (flutterVersionName == null) {
     flutterVersionName = "1.0"
 }
 
+def dartEnvironmentVariables = [
+    ADMOB_APP_ID: "ca-app-pub-3940256099942544~3347511713"
+]
+if (project.hasProperty("dart-defines")) {
+    project.property("dart-defines").split(",").each { entry ->
+        def pair = new String(entry.decodeBase64(), "UTF-8").split("=", 2)
+        if (pair.length == 2) {
+            dartEnvironmentVariables[pair[0]] = pair[1]
+        }
+    }
+}
+
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
@@ -56,6 +68,7 @@ android {
         targetSdk = 36
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
+        manifestPlaceholders += [ADMOB_APP_ID: dartEnvironmentVariables.ADMOB_APP_ID]
     }
 
     signingConfigs {

@@ -26,9 +26,12 @@ class _AdBannerState extends State<AdBanner> {
 
   void _loadAd() {
     if (kIsWeb || AdService.isAdFreeToday) return;
+    const topId = String.fromEnvironment('ADMOB_BANNER_ID');
+    const bottomId = String.fromEnvironment('ADMOB_BANNER_BOTTOM_ID');
     final adUnitId = widget.position == 'Top Ad'
-        ? (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : const String.fromEnvironment('ADMOB_BANNER_ID', defaultValue: 'ca-app-pub-3940256099942544/6300978111'))
-        : (kDebugMode ? 'ca-app-pub-3940256099942544/6300978111' : const String.fromEnvironment('ADMOB_BANNER_ID', defaultValue: 'ca-app-pub-3940256099942544/6300978111'));
+        ? topId
+        : (bottomId.isNotEmpty ? bottomId : topId);
+    if (!AdService.isValidAdUnitId(adUnitId)) return;
 
     _bannerAd = BannerAd(
       adUnitId: adUnitId,

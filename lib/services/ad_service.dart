@@ -32,11 +32,9 @@ class AdService {
   static final ValueNotifier<bool> adFreeTodayNotifier = ValueNotifier<bool>(false);
 
   static const String _prodInterstitialAdUnitId =
-      String.fromEnvironment('ADMOB_INTERSTITIAL_ID', defaultValue: 'ca-app-pub-3940256099942544/1033173712');
-  static const String _testInterstitialAdUnitId = 'ca-app-pub-3940256099942544/1033173712';
+      String.fromEnvironment('ADMOB_INTERSTITIAL_ID');
 
-  static String get interstitialAdUnitId =>
-      kDebugMode ? _testInterstitialAdUnitId : _prodInterstitialAdUnitId;
+  static String get interstitialAdUnitId => _prodInterstitialAdUnitId;
 
   static bool isValidAdUnitId(String id) {
     return RegExp(r'^ca-app-pub-\d+/\d+$').hasMatch(id.trim());
