@@ -4,6 +4,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+import 'ad_service.dart';
 
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
@@ -148,9 +149,12 @@ class NotificationService {
         iOS: iosDetails,
       );
 
-      // Pick a random message for variety
-      final morningBody = _morningMessages[random.nextInt(_morningMessages.length)];
-      final eveningBody = _eveningMessages[random.nextInt(_eveningMessages.length)];
+      // Pick a random message for variety and append streak note (non-remove_ads only)
+      final streakSuffix = AdService.streakNotificationSuffix();
+      final morningBody =
+          '${_morningMessages[random.nextInt(_morningMessages.length)]}$streakSuffix';
+      final eveningBody =
+          '${_eveningMessages[random.nextInt(_eveningMessages.length)]}$streakSuffix';
 
       // 1. Morning Notification at 7:00 AM
       await _notificationsPlugin.zonedSchedule(

@@ -13,12 +13,14 @@ class NoAdsPopup extends StatelessWidget {
     required this.isStreakReward,
     required this.streakDays,
     this.isAdFreePurchased = false,
+    this.isNoFill = false,
   });
 
   final int step;
   final bool isStreakReward;
   final int streakDays;
   final bool isAdFreePurchased;
+  final bool isNoFill;
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +36,10 @@ class NoAdsPopup extends StatelessWidget {
         ? 'Thank You for Your Support!'
         : (isStreakReward
             ? '3-Day Streak Reward: No Ads Today!'
-            : 'No Ads Today!');
-    final prefix = isAdFreePurchased ? '' : 'Enjoy an ad-free experience today! ';
+            : (isNoFill ? 'No Ads Today!' : 'Enjoying Dua-ul-Anbiya?'));
+    final prefix = (isAdFreePurchased || (!isStreakReward && !isNoFill))
+        ? ''
+        : 'Enjoy an ad-free experience today! ';
     if (actionIndex == 0) {
       headerIcon = Icons.star_rounded;
       title = resolvedTitle;

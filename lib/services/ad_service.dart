@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -17,11 +18,9 @@ class AdService {
   static const String _prefLastOpenDate = 'ad_streak_last_open_date';
   static const String _prefStreakDays = 'ad_streak_days';
   static const String _prefAdFreeDate = 'ad_free_date';
-  static const String _prefPopupStep = 'no_ads_popup_step';
   static const String _prefAdsRemoved = 'ads_removed_permanently';
 
   static String _adFreeDate = '';
-  static int _popupStep = 0;
   static int _streakDays = 1;
   static bool _isStreakRewardToday = false;
   static bool _noFillThisLaunch = false;
@@ -71,7 +70,6 @@ class AdService {
     _adsRemoved = prefs.getBool(_prefAdsRemoved) ?? false;
     _streakDays = prefs.getInt(_prefStreakDays) ?? 0;
     _adFreeDate = prefs.getString(_prefAdFreeDate) ?? '';
-    _popupStep = prefs.getInt(_prefPopupStep) ?? 0;
 
     if (lastOpen != today) {
       if (lastOpen == yesterday) {
@@ -80,16 +78,15 @@ class AdService {
         _streakDays = 1;
       }
       if (_streakDays >= streakRewardDays) {
-        _isStreakRewardToday = true;
-        _adFreeDate = today;
+        final tomorrow = _dateKey(DateTime.now().add(const Duration(days: 1)));
+        _adFreeDate = tomorrow;
         _streakDays = 0;
-        await prefs.setString(_prefAdFreeDate, today);
+        await prefs.setString(_prefAdFreeDate, tomorrow);
       }
       await prefs.setString(_prefLastOpenDate, today);
       await prefs.setInt(_prefStreakDays, _streakDays);
-    } else if (_adFreeDate == today && _streakDays == 0) {
-      _isStreakRewardToday = true;
     }
+    _isStreakRewardToday = _adFreeDate == today;
 
     if (adsPausedForSuspension) {
       _adFreeDate = today;
@@ -99,24 +96,34 @@ class AdService {
     adFreeTodayNotifier.value = isAdFreeToday;
   }
 
+  static String streakNotificationSuffix() {
+    if (_adsRemoved) return '';
+    final tomorrow = _dateKey(DateTime.now().add(const Duration(days: 1)));
+    if (_adFreeDate == tomorrow) {
+      return ' Streak complete! Today is 100% Ad-Free!';
+    }
+    if (_streakDays == 1) {
+      return ' Open today (Day 2/3) toward a Free Ad-Free Day!';
+    }
+    if (_streakDays == 2) {
+      return ' 1 more day (Day 3/3) to unlock tomorrow Ad-Free!';
+    }
+    return '';
+  }
+
   static Future<void> markNoFillTodayAndNotify(String adUnitId) async {
     if (!isValidAdUnitId(adUnitId)) return;
     _noFillThisLaunch = true;
   }
 
   static Future<void> showNoAdsPopupIfNeeded(BuildContext context) async {
-    if ((!isAdFreeToday && !_noFillThisLaunch) ||
-        _popupShownThisLaunch ||
-        _dialogCurrentlyVisible) {
+    if (_popupShownThisLaunch || _dialogCurrentlyVisible) {
       return;
     }
     if (ModalRoute.of(context)?.isCurrent != true) return;
 
-    final prefs = await SharedPreferences.getInstance();
-    final currentStep = _popupStep;
+    final randomStep = Random().nextInt(3);
     _popupShownThisLaunch = true;
-    _popupStep = (_popupStep + 1) % 3;
-    await prefs.setInt(_prefPopupStep, _popupStep);
 
     if (!context.mounted) return;
     _dialogCurrentlyVisible = true;
@@ -124,10 +131,11 @@ class AdService {
       context: context,
       barrierDismissible: true,
       builder: (_) => NoAdsPopup(
-        step: currentStep,
+        step: randomStep,
         isStreakReward: _isStreakRewardToday,
         streakDays: _streakDays,
         isAdFreePurchased: _adsRemoved,
+        isNoFill: _noFillThisLaunch,
       ),
     );
     _dialogCurrentlyVisible = false;
